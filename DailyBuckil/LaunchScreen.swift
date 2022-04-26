@@ -14,6 +14,7 @@ struct LaunchScreen: View {
             .scaledToFit()
             .edgesIgnoringSafeArea(.all)
             .aspectRatio(contentMode: .fill)
+        
     }
 }
 
