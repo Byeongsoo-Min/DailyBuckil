@@ -15,6 +15,9 @@
 		8307F1962817BDDA00D3937F /* DailyBuckilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1952817BDDA00D3937F /* DailyBuckilUITests.swift */; };
 		8307F1982817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1972817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift */; };
 		8307F1A52817BEAD00D3937F /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1A42817BEAD00D3937F /* LaunchScreen.swift */; };
+		8307F1AA2819230F00D3937F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1A92819230F00D3937F /* HomePage.swift */; };
+		8307F1AC2819358200D3937F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1AB2819358200D3937F /* AppData.swift */; };
+		8307F1AE281A6A2E00D3937F /* NavigationBarTitleSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1AD281A6A2E00D3937F /* NavigationBarTitleSuperView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,10 @@
 		8307F1952817BDDA00D3937F /* DailyBuckilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBuckilUITests.swift; sourceTree = "<group>"; };
 		8307F1972817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBuckilUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8307F1A42817BEAD00D3937F /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		8307F1A628180EF500D3937F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8307F1A92819230F00D3937F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		8307F1AB2819358200D3937F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		8307F1AD281A6A2E00D3937F /* NavigationBarTitleSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleSuperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +103,15 @@
 		8307F1792817BDD700D3937F /* DailyBuckil */ = {
 			isa = PBXGroup;
 			children = (
+				8307F1A628180EF500D3937F /* Info.plist */,
 				8307F17A2817BDD700D3937F /* DailyBuckilApp.swift */,
 				8307F17C2817BDD700D3937F /* ContentView.swift */,
 				8307F17E2817BDDA00D3937F /* Assets.xcassets */,
 				8307F1802817BDDA00D3937F /* Preview Content */,
 				8307F1A42817BEAD00D3937F /* LaunchScreen.swift */,
+				8307F1A92819230F00D3937F /* HomePage.swift */,
+				8307F1AB2819358200D3937F /* AppData.swift */,
+				8307F1AD281A6A2E00D3937F /* NavigationBarTitleSuperView.swift */,
 			);
 			path = DailyBuckil;
 			sourceTree = "<group>";
@@ -263,6 +274,9 @@
 				8307F17D2817BDD700D3937F /* ContentView.swift in Sources */,
 				8307F17B2817BDD700D3937F /* DailyBuckilApp.swift in Sources */,
 				8307F1A52817BEAD00D3937F /* LaunchScreen.swift in Sources */,
+				8307F1AA2819230F00D3937F /* HomePage.swift in Sources */,
+				8307F1AC2819358200D3937F /* AppData.swift in Sources */,
+				8307F1AE281A6A2E00D3937F /* NavigationBarTitleSuperView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +437,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DailyBuckil/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyBuckil/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,9 +465,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DailyBuckil/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DailyBuckil/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
