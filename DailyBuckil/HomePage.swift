@@ -8,79 +8,87 @@
 import SwiftUI
 
 struct HomePage: View {
-//    @State var Weathercolor = AppData.Weather_color
-//    var Weather_what:Weather = .Snow
+    let weatherhow:Int = 0
+    let todaydata = Array(1...4).map{"Buckil\($0)"}
+    let purchasedata = Array(1...4).map{"Purchase\($0)"}
+    let columns1 = [
+        GridItem(.flexible())
+    ]
+    let columns2 = [
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    @State var fontnow: String = fontlist.randomElement() ?? "Whisper-Regular.ttf"
+    @State var text: String = ""
     var body: some View {
-        VStack {
+        ZStack{
+        ScrollView{
+            LazyVStack(pinnedViews:[.sectionHeaders]) {
+                Section(header: NavigationBarTitleSuperView(weatherindex: weatherhow, fontnow: self.$fontnow, text: self.$text)){
+                    VStack{
+                        HStack {
+                            Text("Today's Buckil")
+                                .foregroundColor(Color("MainColor"))
+                                .font(.custom(fontnow, size: 30))
+                                .padding(.horizontal)
+                                .padding(.vertical)
+                            Spacer()
+                        }
+                        ScrollView(.horizontal){
+                            
+                            Section(){
+                                HStack(){
+                                    ForEach(todaydata, id: \.self) {i in
+                                        VStack{
+                                            
+                                            Image(i)
+                                                .resizable()
+                                                .frame(height: 300)
+                                                .scaledToFit()
+                                                .aspectRatio(1, contentMode: .fit)
+                                            
+                                            
+                                        }
+                                    }
+                                    Image(systemName: "arrow.forward")
+                                        
+                                }
+                            }
+                            
+                        }
+                        
+                        Divider()
+                        Section(){
+                            HStack{
+                                Text("Recent Purchase")
+                                    .foregroundColor(Color("MainColor"))
+                                    .font(.custom(fontnow, size: 30))
+                                    .padding(.horizontal)
+                                    .padding(.vertical)
+                                Spacer()
+                            }
+                            LazyVGrid(columns: columns2, spacing: 20){
+                                ForEach(purchasedata, id: \.self) {i in
+                                    VStack{
+                                        Image(i)
+                                            .resizable()
+                                            .frame(height: 200)
+                                            .scaledToFit()
+                                            .aspectRatio(1, contentMode: .fit)
+                                        Text(i)
+                                    }
+                                }
+                            }
+                            .padding(.horizontal)
+                        }
+                    }
+                    
+                }
+                
+            }
             
-            Text("Daily Buckil")
-                .fontWeight(.bold)
-            
-            NavigationBarTitleSuperView(weather: 0)
-            NavigationBarTitleSuperView(weather: 1)
-            NavigationBarTitleSuperView(weather: 2)
-            NavigationBarTitleSuperView(weather: 3)
-            
-//            if (Weather_what == .Sunny){
-//                HStack() {
-//                    Text("Daily Buckil")
-//                        .fontWeight(.bold)
-//                    Image(systemName: "sun.max")
-//                    Text("23°")
-//                        .fontWeight(.bold)
-//                    Spacer()
-//                }
-//                .frame(width: .infinity, alignment: .topLeading)
-//                .padding()
-//                .foregroundColor(Weathercolor[0])
-//                .font(.title2)
-//                Spacer()
-//            }
-//            else if (Weather_what == .Cloudy){
-//                HStack(){
-//                    Text("Daily Buckil")
-//                        .fontWeight(.bold)
-//                    Image(systemName: "cloud.fill")
-//                    Text("23°")
-//                        .fontWeight(.bold)
-//                    Spacer()
-//                }
-//                .frame(width: .infinity, alignment: .topLeading)
-//                .padding()
-//                .foregroundColor(Weathercolor[1])
-//                .font(.title2)
-//                Spacer()
-//            }
-//            else if (Weather_what == .Rainy){
-//                HStack(){
-//                    Text("Daily Buckil")
-//                        .fontWeight(.bold)
-//                    Image(systemName: "cloud.heavyrain.fill")
-//                    Text("23°")
-//                        .fontWeight(.bold)
-//                    Spacer()
-//                }
-//                .frame(width: .infinity, alignment: .topLeading)
-//                .padding()
-//                .foregroundColor(Weathercolor[2])
-//                .font(.title2)
-//                Spacer()
-//            }
-//            else{
-//                HStack(){
-//                    Text("Daily Buckil")
-//                        .fontWeight(.bold)
-//                    Image(systemName: "snowflake")
-//                    Text("23°")
-//                        .fontWeight(.bold)
-//                    Spacer()
-//                }
-//                .frame(width: .infinity, alignment: .topLeading)
-//                .padding()
-//                .foregroundColor(Weathercolor[3])
-//                .font(.title2)
-//                Spacer()
-//            }
+        }
+        .clipped()
         }
     }
 }

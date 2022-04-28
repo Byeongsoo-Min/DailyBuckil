@@ -25,7 +25,7 @@ struct Weather {
     
 }
 
-
+let fontlist:[String] = ["Lobster-Regular", "BebasNeue-Regular", "ShadowsIntoLight-Regular", "Montserrat-Italic-VariableFont_wght", "Montserrat-VariableFont_wght"]
 
 
 //struct AppData{

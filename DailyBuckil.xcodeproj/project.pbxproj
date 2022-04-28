@@ -18,6 +18,30 @@
 		8307F1AA2819230F00D3937F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1A92819230F00D3937F /* HomePage.swift */; };
 		8307F1AC2819358200D3937F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1AB2819358200D3937F /* AppData.swift */; };
 		8307F1AE281A6A2E00D3937F /* NavigationBarTitleSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1AD281A6A2E00D3937F /* NavigationBarTitleSuperView.swift */; };
+		8307F1B1281A74B400D3937F /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B0281A74B400D3937F /* BebasNeue-Regular.ttf */; };
+		8307F1B2281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B0281A74B400D3937F /* BebasNeue-Regular.ttf */; };
+		8307F1B3281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B0281A74B400D3937F /* BebasNeue-Regular.ttf */; };
+		8307F1B5281A756000D3937F /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B4281A756000D3937F /* Lobster-Regular.ttf */; };
+		8307F1B6281A756000D3937F /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B4281A756000D3937F /* Lobster-Regular.ttf */; };
+		8307F1B7281A756000D3937F /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B4281A756000D3937F /* Lobster-Regular.ttf */; };
+		8307F1B9281A756700D3937F /* WaterBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B8281A756700D3937F /* WaterBrush-Regular.ttf */; };
+		8307F1BA281A756700D3937F /* WaterBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B8281A756700D3937F /* WaterBrush-Regular.ttf */; };
+		8307F1BB281A756700D3937F /* WaterBrush-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1B8281A756700D3937F /* WaterBrush-Regular.ttf */; };
+		8307F1BD281A756E00D3937F /* Whisper-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1BC281A756E00D3937F /* Whisper-Regular.ttf */; };
+		8307F1BE281A756E00D3937F /* Whisper-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1BC281A756E00D3937F /* Whisper-Regular.ttf */; };
+		8307F1BF281A756E00D3937F /* Whisper-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1BC281A756E00D3937F /* Whisper-Regular.ttf */; };
+		8307F1C1281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C0281A798C00D3937F /* ShadowsIntoLight-Regular.ttf */; };
+		8307F1C2281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C0281A798C00D3937F /* ShadowsIntoLight-Regular.ttf */; };
+		8307F1C3281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C0281A798C00D3937F /* ShadowsIntoLight-Regular.ttf */; };
+		8307F1C5281AB32B00D3937F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1C4281AB32B00D3937F /* SearchBar.swift */; };
+		8307F1C6281AB32B00D3937F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1C4281AB32B00D3937F /* SearchBar.swift */; };
+		8307F1C7281AB32B00D3937F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1C4281AB32B00D3937F /* SearchBar.swift */; };
+		8307F1CA281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C8281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf */; };
+		8307F1CB281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C8281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf */; };
+		8307F1CC281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C8281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf */; };
+		8307F1CD281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		8307F1CE281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		8307F1CF281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +77,14 @@
 		8307F1A92819230F00D3937F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		8307F1AB2819358200D3937F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		8307F1AD281A6A2E00D3937F /* NavigationBarTitleSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleSuperView.swift; sourceTree = "<group>"; };
+		8307F1B0281A74B400D3937F /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "BebasNeue-Regular.ttf"; path = "../../../../Downloads/Bebas_Neue,Lobster,Water_Brush,Whisper/Bebas_Neue/BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		8307F1B4281A756000D3937F /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lobster-Regular.ttf"; path = "../../../../Downloads/Bebas_Neue,Lobster,Water_Brush,Whisper/Lobster/Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		8307F1B8281A756700D3937F /* WaterBrush-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WaterBrush-Regular.ttf"; path = "../../../../Downloads/Bebas_Neue,Lobster,Water_Brush,Whisper/Water_Brush/WaterBrush-Regular.ttf"; sourceTree = "<group>"; };
+		8307F1BC281A756E00D3937F /* Whisper-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Whisper-Regular.ttf"; path = "../../../../Downloads/Bebas_Neue,Lobster,Water_Brush,Whisper/Whisper/Whisper-Regular.ttf"; sourceTree = "<group>"; };
+		8307F1C0281A798C00D3937F /* ShadowsIntoLight-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ShadowsIntoLight-Regular.ttf"; path = "../../../../Downloads/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf"; sourceTree = "<group>"; };
+		8307F1C4281AB32B00D3937F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		8307F1C8281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-VariableFont_wght.ttf"; path = "../../../../Desktop/Montserrat/Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic-VariableFont_wght.ttf"; path = "../../../../Desktop/Montserrat/Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +115,8 @@
 		8307F16E2817BDD700D3937F = {
 			isa = PBXGroup;
 			children = (
+				8307F1C4281AB32B00D3937F /* SearchBar.swift */,
+				8307F1AF281A746800D3937F /* font */,
 				8307F1792817BDD700D3937F /* DailyBuckil */,
 				8307F18A2817BDDA00D3937F /* DailyBuckilTests */,
 				8307F1942817BDDA00D3937F /* DailyBuckilUITests */,
@@ -139,6 +173,20 @@
 				8307F1972817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift */,
 			);
 			path = DailyBuckilUITests;
+			sourceTree = "<group>";
+		};
+		8307F1AF281A746800D3937F /* font */ = {
+			isa = PBXGroup;
+			children = (
+				8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */,
+				8307F1C8281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf */,
+				8307F1C0281A798C00D3937F /* ShadowsIntoLight-Regular.ttf */,
+				8307F1BC281A756E00D3937F /* Whisper-Regular.ttf */,
+				8307F1B8281A756700D3937F /* WaterBrush-Regular.ttf */,
+				8307F1B4281A756000D3937F /* Lobster-Regular.ttf */,
+				8307F1B0281A74B400D3937F /* BebasNeue-Regular.ttf */,
+			);
+			path = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,8 +293,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8307F1BD281A756E00D3937F /* Whisper-Regular.ttf in Resources */,
 				8307F1822817BDDA00D3937F /* Preview Assets.xcassets in Resources */,
+				8307F1B5281A756000D3937F /* Lobster-Regular.ttf in Resources */,
 				8307F17F2817BDDA00D3937F /* Assets.xcassets in Resources */,
+				8307F1CD281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				8307F1CA281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
+				8307F1B9281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
+				8307F1B1281A74B400D3937F /* BebasNeue-Regular.ttf in Resources */,
+				8307F1C1281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +309,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8307F1BE281A756E00D3937F /* Whisper-Regular.ttf in Resources */,
+				8307F1C2281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */,
+				8307F1B2281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */,
+				8307F1CE281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				8307F1BA281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
+				8307F1CB281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
+				8307F1B6281A756000D3937F /* Lobster-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +323,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8307F1BF281A756E00D3937F /* Whisper-Regular.ttf in Resources */,
+				8307F1C3281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */,
+				8307F1B3281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */,
+				8307F1CF281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				8307F1BB281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
+				8307F1CC281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
+				8307F1B7281A756000D3937F /* Lobster-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8307F1C5281AB32B00D3937F /* SearchBar.swift in Sources */,
 				8307F17D2817BDD700D3937F /* ContentView.swift in Sources */,
 				8307F17B2817BDD700D3937F /* DailyBuckilApp.swift in Sources */,
 				8307F1A52817BEAD00D3937F /* LaunchScreen.swift in Sources */,
@@ -285,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8307F18C2817BDDA00D3937F /* DailyBuckilTests.swift in Sources */,
+				8307F1C6281AB32B00D3937F /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +365,7 @@
 			files = (
 				8307F1982817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift in Sources */,
 				8307F1962817BDDA00D3937F /* DailyBuckilUITests.swift in Sources */,
+				8307F1C7281AB32B00D3937F /* SearchBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
