@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LaunchScreen: View {
     var body: some View {
-        Image("launch page")
+        Image("LaunchPage")
             .resizable()
             .scaledToFit()
             .edgesIgnoringSafeArea(.all)

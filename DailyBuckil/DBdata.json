@@ -1,0 +1,67 @@
+[
+    {
+        "season": "spring",
+        "imageURL":"Buckil1",
+        "name": "산뜻한 봄 옷차림",
+        "location": "postech",
+        "rating": 4.8,
+        "tagsTPO": ["꾸꾸꾸","데이트룩", "새내기룩"],
+        "tagsSeason": ["봄"],
+        "tagsAge": ["20대"]
+    },
+    {
+        
+        "season": "spring",
+        "imageURL":"Buckil2",
+        "name": "산뜻한 봄 옷차림",
+        "location": "영일대 호수 공원",
+        "rating": 4.8,
+        "tagsTPO": ["꾸안꾸","데이트룩","새내기룩"],
+        "tagsSeason": ["봄"],
+        "tagsAge": ["20대"]
+    },
+    {
+        
+        "season": "wintertospring",
+        "imageURL":"Buckil3",
+        "name": "살짝 추운 꽃샘추위 옷차림",
+        "location": "한강",
+        "rating": 4.8,
+        "tagsTPO": [ "꾸꾸꾸", "데이트룩"],
+        "tagsSeason": ["겨울", "봄", "꽃샘추위"],
+        "tagsAge": ["20대"]
+    },
+    {
+        
+        "season": "wintertospring",
+        "imageURL":"Buckil4",
+        "name": "살짝 추운 꽃샘추위 옷차림",
+        "location": "고양 이케아",
+        "rating": 4.8,
+        "tagsTPO": ["꾸꾸꾸", "데이트룩"],
+        "tagsSeason": ["겨울", "봄", "꽃샘추위"],
+        "tagsAge": ["20대"]
+    },
+    {
+        
+        "season": "wintertospring",
+        "imageURL":"Buckil5",
+        "name": "살짝 추운 꽃샘추위 옷차림",
+        "location": "postech",
+        "rating": 4.8,
+        "tagsTPO": ["꾸안꾸", "새내기룩", "캠퍼스룩"],
+        "tagsSeason": ["봄", "겨울", "꽃샘추위"],
+        "tagsAge": ["20대"]
+    },
+    {
+        
+        "season": "spring",
+        "imageURL":"Buckil6",
+        "name": "산뜻한 봄 옷차림",
+        "location": "웨어하우스 피자",
+        "rating": 4.8,
+        "tagsTPO": ["꾸안꾸","데이트룩", "새내기룩", "캠퍼스룩"],
+        "tagsSeason": ["봄"],
+        "tagsAge": ["20대"]
+    }
+]

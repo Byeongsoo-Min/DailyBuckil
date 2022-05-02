@@ -9,6 +9,37 @@ import Foundation
 import SwiftUI
 
 
+struct Daily: Codable, Hashable {
+    let type: Season
+    let imageURL: String
+    let name: String
+    let location: String
+    let rating: Double
+    var tagsTPO: [String]
+    var tagsSeason: [String]
+    var tagsAge: [String]
+    
+    enum CodingKeys: String, CodingKey {
+        case imageURL, name, location, rating, tagsTPO, tagsSeason, tagsAge
+        case type = "season"
+    }
+}
+
+enum Season: String, Codable, CaseIterable {
+    case all = "all"
+    case spring = "spring"
+    case summer = "summer"
+    case fall = "fall"
+    case winter = "winter"
+    case wintertospring = "wintertospring"
+    case springtosummer = "q"
+    case summertofall = "w"
+    case falltowinter = "e"
+}
+
+
+
+
 struct Weather {
     let weather: Int
     var image: String

@@ -42,6 +42,27 @@
 		8307F1CD281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */; };
 		8307F1CE281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */; };
 		8307F1CF281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		83D452C4281BB227009FAB30 /* SearchTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C3281BB227009FAB30 /* SearchTag.swift */; };
+		83D452C5281BB227009FAB30 /* SearchTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C3281BB227009FAB30 /* SearchTag.swift */; };
+		83D452C6281BB227009FAB30 /* SearchTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C3281BB227009FAB30 /* SearchTag.swift */; };
+		83D452C9281D7087009FAB30 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C8281D7087009FAB30 /* ListViewModel.swift */; };
+		83D452CA281D7087009FAB30 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C8281D7087009FAB30 /* ListViewModel.swift */; };
+		83D452CB281D7087009FAB30 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C8281D7087009FAB30 /* ListViewModel.swift */; };
+		83D452CD281D70E3009FAB30 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452CC281D70E3009FAB30 /* ListView.swift */; };
+		83D452CE281D70E3009FAB30 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452CC281D70E3009FAB30 /* ListView.swift */; };
+		83D452CF281D70E3009FAB30 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452CC281D70E3009FAB30 /* ListView.swift */; };
+		83D452D1281D71A6009FAB30 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D0281D71A6009FAB30 /* AppBarView.swift */; };
+		83D452D2281D71A6009FAB30 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D0281D71A6009FAB30 /* AppBarView.swift */; };
+		83D452D3281D71A6009FAB30 /* AppBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D0281D71A6009FAB30 /* AppBarView.swift */; };
+		83D452D5281D725D009FAB30 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D4281D725D009FAB30 /* Extensions.swift */; };
+		83D452D6281D725E009FAB30 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D4281D725D009FAB30 /* Extensions.swift */; };
+		83D452D7281D725E009FAB30 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D4281D725D009FAB30 /* Extensions.swift */; };
+		83D452D9281D72B3009FAB30 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D8281D72B3009FAB30 /* StoreView.swift */; };
+		83D452DA281D72B3009FAB30 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D8281D72B3009FAB30 /* StoreView.swift */; };
+		83D452DB281D72B3009FAB30 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452D8281D72B3009FAB30 /* StoreView.swift */; };
+		83D45314281FD108009FAB30 /* DBdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D452C7281BF8AC009FAB30 /* DBdata.json */; };
+		83D45315281FD109009FAB30 /* DBdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D452C7281BF8AC009FAB30 /* DBdata.json */; };
+		83D45316281FD109009FAB30 /* DBdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 83D452C7281BF8AC009FAB30 /* DBdata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +106,13 @@
 		8307F1C4281AB32B00D3937F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		8307F1C8281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-VariableFont_wght.ttf"; path = "../../../../Desktop/Montserrat/Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Italic-VariableFont_wght.ttf"; path = "../../../../Desktop/Montserrat/Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		83D452C3281BB227009FAB30 /* SearchTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTag.swift; sourceTree = "<group>"; };
+		83D452C7281BF8AC009FAB30 /* DBdata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DBdata.json; sourceTree = "<group>"; };
+		83D452C8281D7087009FAB30 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		83D452CC281D70E3009FAB30 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		83D452D0281D71A6009FAB30 /* AppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBarView.swift; sourceTree = "<group>"; };
+		83D452D4281D725D009FAB30 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		83D452D8281D72B3009FAB30 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +143,12 @@
 		8307F16E2817BDD700D3937F = {
 			isa = PBXGroup;
 			children = (
+				83D452D8281D72B3009FAB30 /* StoreView.swift */,
+				83D452D4281D725D009FAB30 /* Extensions.swift */,
+				83D452D0281D71A6009FAB30 /* AppBarView.swift */,
+				83D452CC281D70E3009FAB30 /* ListView.swift */,
+				83D452C8281D7087009FAB30 /* ListViewModel.swift */,
+				83D452C3281BB227009FAB30 /* SearchTag.swift */,
 				8307F1C4281AB32B00D3937F /* SearchBar.swift */,
 				8307F1AF281A746800D3937F /* font */,
 				8307F1792817BDD700D3937F /* DailyBuckil */,
@@ -137,6 +171,7 @@
 		8307F1792817BDD700D3937F /* DailyBuckil */ = {
 			isa = PBXGroup;
 			children = (
+				83D452C7281BF8AC009FAB30 /* DBdata.json */,
 				8307F1A628180EF500D3937F /* Info.plist */,
 				8307F17A2817BDD700D3937F /* DailyBuckilApp.swift */,
 				8307F17C2817BDD700D3937F /* ContentView.swift */,
@@ -298,6 +333,7 @@
 				8307F1B5281A756000D3937F /* Lobster-Regular.ttf in Resources */,
 				8307F17F2817BDDA00D3937F /* Assets.xcassets in Resources */,
 				8307F1CD281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				83D45314281FD108009FAB30 /* DBdata.json in Resources */,
 				8307F1CA281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
 				8307F1B9281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
 				8307F1B1281A74B400D3937F /* BebasNeue-Regular.ttf in Resources */,
@@ -312,6 +348,7 @@
 				8307F1BE281A756E00D3937F /* Whisper-Regular.ttf in Resources */,
 				8307F1C2281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */,
 				8307F1B2281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */,
+				83D45315281FD109009FAB30 /* DBdata.json in Resources */,
 				8307F1CE281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				8307F1BA281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
 				8307F1CB281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
@@ -326,6 +363,7 @@
 				8307F1BF281A756E00D3937F /* Whisper-Regular.ttf in Resources */,
 				8307F1C3281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */,
 				8307F1B3281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */,
+				83D45316281FD109009FAB30 /* DBdata.json in Resources */,
 				8307F1CF281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				8307F1BB281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
 				8307F1CC281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
@@ -341,12 +379,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8307F1C5281AB32B00D3937F /* SearchBar.swift in Sources */,
+				83D452D1281D71A6009FAB30 /* AppBarView.swift in Sources */,
 				8307F17D2817BDD700D3937F /* ContentView.swift in Sources */,
+				83D452CD281D70E3009FAB30 /* ListView.swift in Sources */,
 				8307F17B2817BDD700D3937F /* DailyBuckilApp.swift in Sources */,
+				83D452D9281D72B3009FAB30 /* StoreView.swift in Sources */,
 				8307F1A52817BEAD00D3937F /* LaunchScreen.swift in Sources */,
+				83D452C4281BB227009FAB30 /* SearchTag.swift in Sources */,
+				83D452C9281D7087009FAB30 /* ListViewModel.swift in Sources */,
 				8307F1AA2819230F00D3937F /* HomePage.swift in Sources */,
 				8307F1AC2819358200D3937F /* AppData.swift in Sources */,
 				8307F1AE281A6A2E00D3937F /* NavigationBarTitleSuperView.swift in Sources */,
+				83D452D5281D725D009FAB30 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +400,12 @@
 			files = (
 				8307F18C2817BDDA00D3937F /* DailyBuckilTests.swift in Sources */,
 				8307F1C6281AB32B00D3937F /* SearchBar.swift in Sources */,
+				83D452DA281D72B3009FAB30 /* StoreView.swift in Sources */,
+				83D452D2281D71A6009FAB30 /* AppBarView.swift in Sources */,
+				83D452D6281D725E009FAB30 /* Extensions.swift in Sources */,
+				83D452CE281D70E3009FAB30 /* ListView.swift in Sources */,
+				83D452CA281D7087009FAB30 /* ListViewModel.swift in Sources */,
+				83D452C5281BB227009FAB30 /* SearchTag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,9 +413,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D452CB281D7087009FAB30 /* ListViewModel.swift in Sources */,
+				83D452C6281BB227009FAB30 /* SearchTag.swift in Sources */,
+				83D452CF281D70E3009FAB30 /* ListView.swift in Sources */,
+				83D452D7281D725E009FAB30 /* Extensions.swift in Sources */,
 				8307F1982817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift in Sources */,
 				8307F1962817BDDA00D3937F /* DailyBuckilUITests.swift in Sources */,
 				8307F1C7281AB32B00D3937F /* SearchBar.swift in Sources */,
+				83D452DB281D72B3009FAB30 /* StoreView.swift in Sources */,
+				83D452D3281D71A6009FAB30 /* AppBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

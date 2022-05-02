@@ -11,7 +11,7 @@ import SwiftUI
 struct DailyBuckilApp: App {
     var body: some Scene {
         WindowGroup {
-            HomePage()
+            ListView()
         }
     }
 }

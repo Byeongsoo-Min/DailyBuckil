@@ -10,7 +10,7 @@ import SwiftUI
 struct NavigationBarTitleSuperView: View {
     let weatherindex: Int
     @Binding var fontnow:String
-    @Binding var text: String
+    
     var body: some View {
         VStack{
             Text("Daily Buckil")
@@ -30,7 +30,7 @@ struct NavigationBarTitleSuperView: View {
             .padding()
             .foregroundColor(Weather(weather: weatherindex).color)
             .font(.custom(fontnow, size: 30))
-            searchBar(text: self.$text)
+            
         }
         .background(.white)
         

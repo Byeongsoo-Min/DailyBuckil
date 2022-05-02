@@ -19,12 +19,11 @@ struct HomePage: View {
         GridItem(.flexible())
     ]
     @State var fontnow: String = fontlist.randomElement() ?? "Whisper-Regular.ttf"
-    @State var text: String = ""
     var body: some View {
         ZStack{
         ScrollView{
             LazyVStack(pinnedViews:[.sectionHeaders]) {
-                Section(header: NavigationBarTitleSuperView(weatherindex: weatherhow, fontnow: self.$fontnow, text: self.$text)){
+                Section(header: NavigationBarTitleSuperView(weatherindex: weatherhow, fontnow: self.$fontnow)){
                     VStack{
                         HStack {
                             Text("Today's Buckil")
@@ -72,7 +71,7 @@ struct HomePage: View {
                                     VStack{
                                         Image(i)
                                             .resizable()
-                                            .frame(height: 200)
+                                            .frame(height: 170)
                                             .scaledToFit()
                                             .aspectRatio(1, contentMode: .fit)
                                         Text(i)
