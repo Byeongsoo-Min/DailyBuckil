@@ -58,7 +58,7 @@ class ListViewModel: ObservableObject {
        enum SortBy: String {
            case nameASC = "Name △"
            case nameDESC = "Name ▽"
-           case ratingASC = "Rating △"
-           case ratingDESC = "Rating ▽"
+           case ratingASC = "Money △"
+           case ratingDESC = "Money ▽"
        }
 }

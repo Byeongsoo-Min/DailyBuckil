@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct DailyBuckilApp: App {
+    var network = Network()
+    
     var body: some Scene {
         WindowGroup {
             ListView()

@@ -25,13 +25,14 @@ struct StoreView: View {
                         .font(.title)
                         .bold()
                     Spacer()
-                    Text(store.location)
-                        .font(.subheadline)
                 }
                 .padding(.bottom, 1)
                 
                 HStack(spacing: 0) {
-                    Image(systemName: "star.fill")
+                    Image("dollar")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
                         .foregroundColor(.yellow)
                     Text(String(store.rating))
                         .padding(.trailing)
@@ -40,7 +41,7 @@ struct StoreView: View {
                     Spacer()
                 }
                 .padding(.bottom, 1)
-                
+                ScrollView(.horizontal) {
                 HStack {
                     ForEach(store.tagsTPO, id: \.self) { tag in
                         Text(tag)
@@ -49,6 +50,7 @@ struct StoreView: View {
                     Spacer()
                 }
                 .padding(.bottom)
+                }
             }
             .frame(width: UIScreen.main.bounds.width-50)
         }

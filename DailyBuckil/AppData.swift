@@ -10,7 +10,7 @@ import SwiftUI
 
 
 struct Daily: Codable, Hashable {
-    let type: Season
+    let type: [Season]
     let imageURL: String
     let name: String
     let location: String
@@ -19,6 +19,7 @@ struct Daily: Codable, Hashable {
     var tagsSeason: [String]
     var tagsAge: [String]
     
+    
     enum CodingKeys: String, CodingKey {
         case imageURL, name, location, rating, tagsTPO, tagsSeason, tagsAge
         case type = "season"
@@ -26,15 +27,15 @@ struct Daily: Codable, Hashable {
 }
 
 enum Season: String, Codable, CaseIterable {
-    case all = "all"
-    case spring = "spring"
-    case summer = "summer"
-    case fall = "fall"
-    case winter = "winter"
-    case wintertospring = "wintertospring"
-    case springtosummer = "q"
-    case summertofall = "w"
-    case falltowinter = "e"
+    case all = "전체"
+    case spring = "봄"
+    case summer = "여름"
+    case fall = "가을"
+    case winter = "겨울"
+    case wintertospring = "초봄"
+    case springtosummer = "초여름"
+    case summertofall = "초가을"
+    case falltowinter = "초겨울"
 }
 
 

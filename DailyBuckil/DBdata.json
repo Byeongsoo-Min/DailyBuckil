@@ -1,65 +1,65 @@
 [
     {
-        "season": "spring",
+        "season": ["봄"],
         "imageURL":"Buckil1",
-        "name": "산뜻한 봄 옷차림",
+        "name": "노란색 포인트 캠퍼스룩 꾸꾸꾸",
         "location": "postech",
-        "rating": 4.8,
+        "rating": 7,
         "tagsTPO": ["꾸꾸꾸","데이트룩", "새내기룩"],
         "tagsSeason": ["봄"],
         "tagsAge": ["20대"]
     },
     {
         
-        "season": "spring",
+        "season": ["봄"],
         "imageURL":"Buckil2",
-        "name": "산뜻한 봄 옷차림",
+        "name": "폴로 감성 섞은 깔끔한 데일리 꾸안꾸",
         "location": "영일대 호수 공원",
-        "rating": 4.8,
+        "rating": 5,
         "tagsTPO": ["꾸안꾸","데이트룩","새내기룩"],
         "tagsSeason": ["봄"],
         "tagsAge": ["20대"]
     },
     {
         
-        "season": "wintertospring",
+        "season": ["봄", "겨울", "초봄"],
         "imageURL":"Buckil3",
-        "name": "살짝 추운 꽃샘추위 옷차림",
+        "name": "미니멀한 레더자켓과 청바지를 조합한 승부옷 꾸꾸꾸",
         "location": "한강",
-        "rating": 4.8,
+        "rating": 8,
         "tagsTPO": [ "꾸꾸꾸", "데이트룩"],
         "tagsSeason": ["겨울", "봄", "꽃샘추위"],
         "tagsAge": ["20대"]
     },
     {
         
-        "season": "wintertospring",
+        "season": ["봄", "겨울", "초봄"],
         "imageURL":"Buckil4",
-        "name": "살짝 추운 꽃샘추위 옷차림",
+        "name": "미니멀한 검은색 레더자켓 안에 데님셔츠를 레이어드하고 슬랙스로 마무리! 꾸꾸꾸",
         "location": "고양 이케아",
-        "rating": 4.8,
+        "rating": 7.5,
         "tagsTPO": ["꾸꾸꾸", "데이트룩"],
         "tagsSeason": ["겨울", "봄", "꽃샘추위"],
         "tagsAge": ["20대"]
     },
     {
         
-        "season": "wintertospring",
+        "season": ["봄", "겨울", "초봄"],
         "imageURL":"Buckil5",
-        "name": "살짝 추운 꽃샘추위 옷차림",
+        "name": "미니멀한 스웨이드 집업에 옥스퍼드셔츠를 레이어드하고 슬랙스와 ",
         "location": "postech",
-        "rating": 4.8,
+        "rating": 6,
         "tagsTPO": ["꾸안꾸", "새내기룩", "캠퍼스룩"],
         "tagsSeason": ["봄", "겨울", "꽃샘추위"],
         "tagsAge": ["20대"]
     },
     {
         
-        "season": "spring",
+        "season": ["봄"],
         "imageURL":"Buckil6",
         "name": "산뜻한 봄 옷차림",
         "location": "웨어하우스 피자",
-        "rating": 4.8,
+        "rating": 4,
         "tagsTPO": ["꾸안꾸","데이트룩", "새내기룩", "캠퍼스룩"],
         "tagsSeason": ["봄"],
         "tagsAge": ["20대"]

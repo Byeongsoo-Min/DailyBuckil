@@ -15,7 +15,7 @@ struct AppBarView: View {
   
     // Got from ListView
     @Binding var inputText: String
-    @Binding var seletedCuisine: Season
+    @Binding var seletedSeason: Season
     @Binding var isOnSale: Bool
      
   
@@ -84,8 +84,8 @@ struct AppBarView: View {
                             viewModel.sortList(by: viewModel.ratingSort)
                         }
                     
-                    Picker(seletedCuisine.rawValue,
-                           selection: $seletedCuisine) {
+                    Picker(seletedSeason.rawValue,
+                           selection: $seletedSeason) {
                         ForEach(Season.allCases, id: \.self) { value in
                             Text(value.rawValue)
                                 .tag(value)
@@ -97,13 +97,13 @@ struct AppBarView: View {
                     .encapulate(borderColor: .gray)
                     
                     if isOnSale {
-                        Text("꾸안꾸")
+                        Text("오늘은 힘 좀 줘볼까")
                             .encapulate(color: .blue.opacity(0.8), foregroundColor: .white)
                             .onTapGesture {
                                 isOnSale.toggle()
                             }
                     } else {
-                        Text("꾸꾸꾸")
+                        Text("오늘은 힘 좀 줘볼까")
                             .encapulate(borderColor: .gray)
                             .onTapGesture {
                                 isOnSale.toggle()

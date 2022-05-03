@@ -12,32 +12,35 @@ struct ListView: View {
     
     // State variables. It will be passed to AppBarView as @Binding.
     @State var inputText = ""
-    @State var seletedCuisine = Season.all
+    @State var seletedSeason = Season.all
     @State var isOnSale = false
     
     var body: some View {
         VStack {
             // App bar above the list view which contains search, sort options
-            AppBarView(inputText: $inputText, seletedCuisine: $seletedCuisine, isOnSale: $isOnSale)
+            AppBarView(inputText: $inputText, seletedSeason: $seletedSeason, isOnSale: $isOnSale)
                 .environmentObject(viewModel)
                 .padding(.bottom, 5)
                 .overlay(Divider()
-                            .frame(width: UIScreen.main.bounds.width)
-                            .background(Color.black), alignment: .bottom)
+                    .frame(width: UIScreen.main.bounds.width)
+                    .background(Color.black), alignment: .bottom)
                 .padding(.bottom, 5)
-                
+            
             // List of stores
             ScrollView(showsIndicators: false) {
                 LazyVStack {
-                    ForEach(viewModel.dailys.filter({ store in
-                        filterSearchText(store)
-                    }).filter({ store in
-                        filterCuisine(store)
-                    }).filter({ store in
-                        filterOnSale(store)
-                    }), id: \.self) { store in
-                        StoreView(store: store)
-                    }
+                    ForEach(viewModel.dailys
+                        .filter({ store in
+                            (filterSearchText(store) && filterSeason(store) && filterOnSale(store)) || filter
+})
+                            .filter({ store in
+                                filterSeason(store)
+                            })
+                                .filter({ store in
+                                    filterOnSale(store)
+                                }), id: \.self) { store in
+                                    StoreView(store: store)
+                                }
                 }
             }
         }
@@ -52,8 +55,8 @@ struct ListView: View {
         }
     }
     
-    private func filterCuisine(_ store: Daily) -> Bool {
-        if seletedCuisine == .all || seletedCuisine == store.type
+    private func filterSeason(_ store: Daily) -> Bool {
+        if seletedSeason == .all || store.type.contains(seletedSeason)
         {
             return true
         } else {
@@ -62,7 +65,7 @@ struct ListView: View {
     }
     
     private func filterOnSale(_ store: Daily) -> Bool {
-        if !isOnSale || store.tagsTPO.firstIndex(of: "꾸안꾸") != nil {
+        if !isOnSale || store.tagsTPO.firstIndex(of: "꾸꾸꾸") != nil {
             return true
         } else {
             return false
