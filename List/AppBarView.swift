@@ -12,13 +12,15 @@ struct AppBarView: View {
     
     // var deciding whether show search bar or not.
     @State var showSearchBar = false
-  
+    @State var items: [String] = ["데이트룩", "새내기룩", "캠퍼스룩", "캐주얼룩", "동네마실룩"]
+    @State var selections: [String] = []
     // Got from ListView
     @Binding var inputText: String
     @Binding var seletedSeason: Season
     @Binding var isOnSale: Bool
-     
-  
+    @Binding var selectedTPO: TPO
+//    @Binding var selected
+    
     // Search bar textfield
     var SearchBarView: some View {
         VStack {
@@ -87,6 +89,17 @@ struct AppBarView: View {
                     Picker(seletedSeason.rawValue,
                            selection: $seletedSeason) {
                         ForEach(Season.allCases, id: \.self) { value in
+                            Text("계절: \(value.rawValue)")
+                                .tag(value)
+                        }
+                    }
+                    .colorMultiply(.black)
+                    .pickerStyle(.menu)
+                    .padding(.vertical, -5)
+                    .encapulate(borderColor: .gray)
+                    
+                    Picker(selectedTPO.rawValue, selection: $selectedTPO){
+                        ForEach(TPO.allCases, id: \.self) { value in
                             Text(value.rawValue)
                                 .tag(value)
                         }

@@ -13,15 +13,15 @@ class ListViewModel: ObservableObject {
     @Published var ratingSort = SortBy.ratingASC
     init() {
         dailys = loadJsonFile()
-        print("123")
+        
     }
     
     private func loadJsonFile() -> [Daily]{
         var dbData = [Daily]()
-        print(Bundle.main.bundleURL)
+        
         do {
             if let filePath  = Bundle.main.url(forResource: "DBdata", withExtension: "json") {
-                print("456")
+                
                 let jsonData = try Data(contentsOf: filePath)
                 let decodedData = try JSONDecoder().decode([Daily].self, from: jsonData)
                 dbData = decodedData
@@ -45,11 +45,11 @@ class ListViewModel: ObservableObject {
                }
            case .ratingASC:  // rating ascending
                dailys.sort {
-                   $0.rating < $1.rating
+                   $0.money < $1.money
                }
            case .ratingDESC: // rating descending
                dailys.sort {
-                   $0.rating > $1.rating
+                   $0.money > $1.money
                }
            }
        }

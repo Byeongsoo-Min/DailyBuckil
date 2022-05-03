@@ -14,15 +14,17 @@ struct Daily: Codable, Hashable {
     let imageURL: String
     let name: String
     let location: String
-    let rating: Double
-    var tagsTPO: [String]
+    let money: Double
+    let dress: String
+    var tagsTPO: [TPO]
     var tagsSeason: [String]
-    var tagsAge: [String]
+    var tagsAge: Age
     
     
     enum CodingKeys: String, CodingKey {
-        case imageURL, name, location, rating, tagsTPO, tagsSeason, tagsAge
+        case imageURL, name, location, money, tagsSeason, tagsAge, dress
         case type = "season"
+        case tagsTPO = "tagsTPO"
     }
 }
 
@@ -38,7 +40,22 @@ enum Season: String, Codable, CaseIterable {
     case falltowinter = "초겨울"
 }
 
+enum TPO: String, Codable, CaseIterable{
+    case all = "전체"
+    case datinglook = "데이트룩"
+    case freshmenlook = "새내기룩"
+    case campuslook = "캠퍼스룩"
+    case casuallook = "캐주얼룩"
+    case onemilewear = "동네마실룩"
+}
 
+enum Age: String, Codable, CaseIterable{
+    case all = "전체"
+    case teens = "10대"
+    case twenties = "20대"
+    case thirties = "30대"
+    case forties = "40대"
+}
 
 
 struct Weather {

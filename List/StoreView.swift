@@ -15,7 +15,7 @@ struct StoreView: View {
             Image(store.imageURL)
                 .resizable()
                 .scaledToFill()
-                .frame(width: UIScreen.main.bounds.width-50, height: 200)
+                .frame(width: UIScreen.main.bounds.width-50, height: 200, alignment: .center)
                 .clipped()
             
             
@@ -34,7 +34,7 @@ struct StoreView: View {
                         .scaledToFit()
                         .frame(width: 20, height: 20)
                         .foregroundColor(.yellow)
-                    Text(String(store.rating))
+                    Text(String(store.money))
                         .padding(.trailing)
 //                    Text(store.type.rawValue)
                         .foregroundColor(.gray)
@@ -44,7 +44,7 @@ struct StoreView: View {
                 ScrollView(.horizontal) {
                 HStack {
                     ForEach(store.tagsTPO, id: \.self) { tag in
-                        Text(tag)
+                        Text(tag.rawValue)
                             .encapulate(color: .black.opacity(0.8), foregroundColor : .white)
                     }
                     Spacer()

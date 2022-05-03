@@ -14,11 +14,11 @@ struct ListView: View {
     @State var inputText = ""
     @State var seletedSeason = Season.all
     @State var isOnSale = false
-    
+    @State var selectedTPO = TPO.all
     var body: some View {
         VStack {
             // App bar above the list view which contains search, sort options
-            AppBarView(inputText: $inputText, seletedSeason: $seletedSeason, isOnSale: $isOnSale)
+            AppBarView(inputText: $inputText, seletedSeason: $seletedSeason, isOnSale: $isOnSale, selectedTPO : $selectedTPO)
                 .environmentObject(viewModel)
                 .padding(.bottom, 5)
                 .overlay(Divider()
@@ -31,11 +31,14 @@ struct ListView: View {
                 LazyVStack {
                     ForEach(viewModel.dailys
                         .filter({ store in
-                            (filterSearchText(store) && filterSeason(store) && filterOnSale(store)) || filter
-})
+                            filterSearchText(store)
+                             })
                             .filter({ store in
                                 filterSeason(store)
                             })
+                                .filter({store in
+                                    filterTPO(store)
+                                })
                                 .filter({ store in
                                     filterOnSale(store)
                                 }), id: \.self) { store in
@@ -65,10 +68,20 @@ struct ListView: View {
     }
     
     private func filterOnSale(_ store: Daily) -> Bool {
-        if !isOnSale || store.tagsTPO.firstIndex(of: "꾸꾸꾸") != nil {
+        if !isOnSale || store.dress == "꾸꾸꾸" {
             return true
         } else {
             return false
         }
     }
+    
+    private func filterTPO(_ store: Daily) -> Bool{
+        if selectedTPO == .all || store.tagsTPO.contains(selectedTPO)
+        {
+            return true
+        } else {
+            return false
+        }
+    }
+    
 }
