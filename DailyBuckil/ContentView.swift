@@ -8,9 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var network: Network
-    var temp: String { String(format: "%.1f", (network.weather.main.temp - 273.15)) }
-    var description: String { network.weather.weather.first?.weatherDescription ?? "" }
     
     var body: some View {
         VStack {

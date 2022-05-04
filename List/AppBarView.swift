@@ -17,26 +17,29 @@ struct AppBarView: View {
     // Got from ListView
     @Binding var inputText: String
     @Binding var seletedSeason: Season
-    @Binding var isOnSale: Bool
+    @Binding var dressup: Bool
     @Binding var selectedTPO: TPO
-//    @Binding var selected
+    @Binding var currentFont: String
+    //    @Binding var selected
     
     // Search bar textfield
     var SearchBarView: some View {
         VStack {
-            TextField("검색어를 입력하세요", text: $inputText)
+            TextField("Enter the keyword", text: $inputText)
                 .padding(5)
-                .font(.system(size: 15))
+                .font(.custom(currentFont, size: 15))
                 .textFieldStyle(.roundedBorder)
                 .shadow(radius: 3)
         }
     }
     
     var body: some View{
+        
         VStack {
             HStack {
                 // Doing nothing. Just for decoration
-                Image(systemName: "ellipsis")
+                
+                
                 Spacer()
                 
                 // Search bar
@@ -45,11 +48,12 @@ struct AppBarView: View {
                         .transition(.move(edge: .top))
                 } else {
                     Text("Daily Buckil")
+                        .font(.custom(currentFont, size: 20))
                         .bold()
                 }
-                 
+                
                 Spacer()
-              
+                
                 // Search button to show search bar
                 Image(systemName: "magnifyingglass")
                     .onTapGesture {
@@ -59,9 +63,9 @@ struct AppBarView: View {
                         }
                     }
             }
-            .font(.system(size: 25))
+            .font(.custom(currentFont, size: 25))
             .frame(height: 50)
-  
+            
             // Sort options
             ScrollView(.horizontal) {
                 HStack(spacing: 10) {
@@ -89,19 +93,32 @@ struct AppBarView: View {
                     Picker(seletedSeason.rawValue,
                            selection: $seletedSeason) {
                         ForEach(Season.allCases, id: \.self) { value in
-                            Text("계절: \(value.rawValue)")
-                                .tag(value)
+                            if(value.rawValue == "전체"){
+                                Text("계절: \(value.rawValue)")
+                                    .tag(value)
+                            }
+                            else{
+                                Text("\(value.rawValue)")
+                                    .tag(value)
+                            }
                         }
+                        
                     }
-                    .colorMultiply(.black)
-                    .pickerStyle(.menu)
-                    .padding(.vertical, -5)
-                    .encapulate(borderColor: .gray)
+                           .colorMultiply(.black)
+                           .pickerStyle(.menu)
+                           .padding(.vertical, -5)
+                           .encapulate(borderColor: .gray)
                     
                     Picker(selectedTPO.rawValue, selection: $selectedTPO){
                         ForEach(TPO.allCases, id: \.self) { value in
-                            Text(value.rawValue)
-                                .tag(value)
+                            if(value.rawValue == "전체"){
+                                Text("TPO: \(value.rawValue)")
+                                    .tag(value)
+                            }
+                            else{
+                                Text("\(value.rawValue)")
+                                    .tag(value)
+                            }
                         }
                     }
                     .colorMultiply(.black)
@@ -109,17 +126,17 @@ struct AppBarView: View {
                     .padding(.vertical, -5)
                     .encapulate(borderColor: .gray)
                     
-                    if isOnSale {
+                    if dressup {
                         Text("오늘은 힘 좀 줘볼까")
                             .encapulate(color: .blue.opacity(0.8), foregroundColor: .white)
                             .onTapGesture {
-                                isOnSale.toggle()
+                                dressup.toggle()
                             }
                     } else {
                         Text("오늘은 힘 좀 줘볼까")
                             .encapulate(borderColor: .gray)
                             .onTapGesture {
-                                isOnSale.toggle()
+                                dressup.toggle()
                             }
                     }
                 }
@@ -128,4 +145,5 @@ struct AppBarView: View {
         }
         .frame(width: UIScreen.main.bounds.width-30, height: 100)
     }
+    
 }

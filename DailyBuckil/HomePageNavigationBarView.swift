@@ -7,29 +7,32 @@
 
 import SwiftUI
 
-struct NavigationBarTitleSuperView: View {
-    let weatherindex: Int
-    @Binding var fontnow:String
+struct HomePageNavigationBarView: View {
+    let weatherIndex: Int
+    @Binding var currentFont: String
+    @EnvironmentObject var network: Network
+    var temp: String { String(format: "%.1f", (network.weather.main.temp - 273.15)) }
+    var description: String { network.weather.weather.first?.weatherDescription ?? "" }
     
     var body: some View {
         VStack{
             Text("Daily Buckil")
-                .font(.custom(fontnow, size: 40))
+                .font(.custom(currentFont, size: 40))
                 .fontWeight(.bold)
                 .foregroundColor(Color("MainColor"))
             HStack() {
                 Text("Today's Weather")
                     .fontWeight(.bold)
                 Spacer()
-                Image(systemName: Weather(weather: weatherindex).image)
-                Text("23°")
+                Image(systemName: Weather(weather: weatherIndex).image)
+                Text(temp)
                     .fontWeight(.bold)
                 
             }
             .frame(width: .infinity, alignment: .topLeading)
             .padding()
-            .foregroundColor(Weather(weather: weatherindex).color)
-            .font(.custom(fontnow, size: 30))
+            .foregroundColor(Weather(weather: weatherIndex).color)
+            .font(.custom(currentFont, size: 30))
             
         }
         .background(.white)

@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct StoreView: View {
-    let store: Daily
+struct DailyView: View {
+    let daily: Daily
     
     var body: some View {
         VStack {
-            Image(store.imageURL)
+            Image(daily.imageURL)
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width-50, height: 200, alignment: .center)
@@ -21,7 +21,7 @@ struct StoreView: View {
             
             VStack {
                 HStack {
-                    Text(store.name)
+                    Text(daily.name)
                         .font(.title)
                         .bold()
                     Spacer()
@@ -34,7 +34,7 @@ struct StoreView: View {
                         .scaledToFit()
                         .frame(width: 20, height: 20)
                         .foregroundColor(.yellow)
-                    Text(String(store.money))
+                    Text(String(daily.money))
                         .padding(.trailing)
 //                    Text(store.type.rawValue)
                         .foregroundColor(.gray)
@@ -43,7 +43,7 @@ struct StoreView: View {
                 .padding(.bottom, 1)
                 ScrollView(.horizontal) {
                 HStack {
-                    ForEach(store.tagsTPO, id: \.self) { tag in
+                    ForEach(daily.tagsTPO, id: \.self) { tag in
                         Text(tag.rawValue)
                             .encapulate(color: .black.opacity(0.8), foregroundColor : .white)
                     }
@@ -57,9 +57,3 @@ struct StoreView: View {
     }
 }
 
-
-struct StoreView_Previews: PreviewProvider {
-    static var previews: some View {
-        ListView()
-    }
-}

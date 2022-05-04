@@ -8,86 +8,99 @@
 import SwiftUI
 
 struct HomePage: View {
-    let weatherhow:Int = 0
-    let todaydata = Array(1...4).map{"Buckil\($0)"}
-    let purchasedata = Array(1...4).map{"Purchase\($0)"}
-    let columns1 = [
+    let weatherHow: Int = 0
+    let todayData = Array(1...4).map{"Buckil\($0)"}
+    let recentPurchase = Array(1...4).map{"Purchase\($0)"}
+    let oneColumnGrid = [
         GridItem(.flexible())
     ]
-    let columns2 = [
+    let twoColumnGrid = [
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-    @State var fontnow: String = fontlist.randomElement() ?? "Whisper-Regular.ttf"
+    @State var currentFont: String = fontlist.randomElement() ?? "Whisper-Regular.ttf"
+    
+    
+    
     var body: some View {
-        ZStack{
-        ScrollView{
-            LazyVStack(pinnedViews:[.sectionHeaders]) {
-                Section(header: NavigationBarTitleSuperView(weatherindex: weatherhow, fontnow: self.$fontnow)){
-                    VStack{
-                        HStack {
-                            Text("Today's Buckil")
-                                .foregroundColor(Color("MainColor"))
-                                .font(.custom(fontnow, size: 30))
-                                .padding(.horizontal)
-                                .padding(.vertical)
-                            Spacer()
-                        }
-                        ScrollView(.horizontal){
-                            
-                            Section(){
-                                HStack(){
-                                    ForEach(todaydata, id: \.self) {i in
-                                        VStack{
-                                            
-                                            Image(i)
-                                                .resizable()
-                                                .frame(height: 300)
-                                                .scaledToFit()
-                                                .aspectRatio(1, contentMode: .fit)
-                                            
-                                            
+        NavigationView {
+            ZStack{
+                ScrollView{
+                    LazyVStack(pinnedViews:[.sectionHeaders]) {
+                        Section(header: HomePageNavigationBarView(weatherIndex: weatherHow, currentFont: self.$currentFont)){
+                            VStack{
+                                HStack {
+                                    Text("Today's Buckil")
+                                        .foregroundColor(Color("MainColor"))
+                                        .font(.custom(currentFont, size: 30))
+                                        .padding(.horizontal)
+                                        .padding(.vertical)
+                                    Spacer()
+                                    NavigationLink {
+                                        ListView(currentFont: $currentFont)
+                                            .navigationBarHidden(true)
+                                    } label: {
+                                        Image(systemName: "arrow.forward")
+                                            .frame(width: 45, height: 45)
+                                            .foregroundColor(Color("MainColor"))
+                                    }
+                                    
+
+                                }
+                                ScrollView(.horizontal){
+                                    
+                                    
+                                    HStack(){
+                                        ForEach(todayData, id: \.self) {i in
+                                            NavigationLink {
+                                                EmptyView()
+                                            } label: {
+                                                Image(i)
+                                                    .resizable()
+                                                    .frame(height: 300)
+                                                    .scaledToFit()
+                                                    .aspectRatio(1, contentMode: .fit)
+                                            }
+                                            }
+                                        Image(systemName: "arrow.forward")
+                                    }
+                                }
+                                
+                                Divider()
+                                Section(){
+                                    HStack{
+                                        Text("Recent Purchase")
+                                            .foregroundColor(Color("MainColor"))
+                                            .font(.custom(currentFont, size: 30))
+                                            .padding(.horizontal)
+                                            .padding(.vertical)
+                                        Spacer()
+                                    }
+                                    LazyVGrid(columns: twoColumnGrid, spacing: 20){
+                                        ForEach(recentPurchase, id: \.self) {i in
+                                            VStack{
+                                                Image(i)
+                                                    .resizable()
+                                                    .frame(height: 170)
+                                                    .scaledToFit()
+                                                    .aspectRatio(1, contentMode: .fit)
+                                                Text(i)
+                                            }
                                         }
                                     }
-                                    Image(systemName: "arrow.forward")
-                                        
+                                    .padding(.horizontal)
                                 }
                             }
                             
                         }
                         
-                        Divider()
-                        Section(){
-                            HStack{
-                                Text("Recent Purchase")
-                                    .foregroundColor(Color("MainColor"))
-                                    .font(.custom(fontnow, size: 30))
-                                    .padding(.horizontal)
-                                    .padding(.vertical)
-                                Spacer()
-                            }
-                            LazyVGrid(columns: columns2, spacing: 20){
-                                ForEach(purchasedata, id: \.self) {i in
-                                    VStack{
-                                        Image(i)
-                                            .resizable()
-                                            .frame(height: 170)
-                                            .scaledToFit()
-                                            .aspectRatio(1, contentMode: .fit)
-                                        Text(i)
-                                    }
-                                }
-                            }
-                            .padding(.horizontal)
-                        }
                     }
                     
                 }
-                
+                .clipped()
             }
-            
-        }
-        .clipped()
+            .navigationBarTitle("")
+            .navigationBarHidden(true)
         }
     }
 }

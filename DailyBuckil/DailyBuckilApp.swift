@@ -13,7 +13,7 @@ struct DailyBuckilApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ListView()
+            HomePage()
         }
     }
 }

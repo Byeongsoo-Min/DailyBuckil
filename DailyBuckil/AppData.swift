@@ -57,6 +57,14 @@ enum Age: String, Codable, CaseIterable{
     case forties = "40대"
 }
 
+enum WeatherDescription: String, CaseIterable{
+    case clear = "clear sky"
+    case
+}
+
+//func getWeatherIndex(){
+//
+//}
 
 struct Weather {
     let weather: Int
@@ -74,7 +82,11 @@ struct Weather {
     
 }
 
-let fontlist:[String] = ["Lobster-Regular", "BebasNeue-Regular", "ShadowsIntoLight-Regular", "Montserrat-Italic-VariableFont_wght", "Montserrat-VariableFont_wght"]
+let fontlist: [String] = ["Lobster-Regular",
+                          "BebasNeue-Regular",
+                          "ShadowsIntoLight-Regular",
+                          "Montserrat-Italic-VariableFont_wght",
+                          "Montserrat-VariableFont_wght"]
 
 
 //struct AppData{
