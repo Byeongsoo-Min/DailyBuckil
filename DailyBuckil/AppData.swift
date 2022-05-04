@@ -19,13 +19,14 @@ struct Daily: Codable, Hashable {
     var tagsTPO: [TPO]
     var tagsSeason: [String]
     var tagsAge: Age
-    
-    
+    var weatherThen: Double
+    var weatherCode: Int
     enum CodingKeys: String, CodingKey {
-        case imageURL, name, location, money, tagsSeason, tagsAge, dress
+        case imageURL, name, location, money, tagsSeason, tagsAge, dress, weatherThen, weatherCode
         case type = "season"
         case tagsTPO = "tagsTPO"
     }
+    
 }
 
 enum Season: String, Codable, CaseIterable {
@@ -57,11 +58,6 @@ enum Age: String, Codable, CaseIterable{
     case forties = "40대"
 }
 
-enum WeatherDescription: String, CaseIterable{
-    case clear = "clear sky"
-    case
-}
-
 //func getWeatherIndex(){
 //
 //}
@@ -85,26 +81,16 @@ struct Weather {
 let fontlist: [String] = ["Lobster-Regular",
                           "BebasNeue-Regular",
                           "ShadowsIntoLight-Regular",
-                          "Montserrat-Italic-VariableFont_wght",
-                          "Montserrat-VariableFont_wght"]
+                          "OleoScriptSwashCaps-Regular"]
 
 
-//struct AppData{
-//    var Today_weather : Weather = Weather.Sunny
-//    static var Weather_color: [Color] = [.orange, .indigo, .blue, .gray]
-//
-//}
-//func HowIsWeather(Weather_what:Weather, weather_case:Int){
-//    var weather_case = weather_case
-//    switch Weather_what {
-//    case .Sunny:
-//        weather_case = 1
-//    case .Cloudy:
-//        weather_case = 2
-//    case .Rainy:
-//        weather_case = 3
-//    case .Snow:
-//        weather_case = 4
-//    }
-//
-//}
+struct TodayData {
+    let todayData = Array(1...6).map{"Buckil\($0)"}
+    
+}
+
+struct RecentPurchase {
+    let recentPurchase = Array(1...6).map{"Purchase\($0)"}
+    
+    
+}

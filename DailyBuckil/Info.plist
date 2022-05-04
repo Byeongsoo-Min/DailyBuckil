@@ -11,15 +11,16 @@
 		<string>WaterBrush-Regular.ttf</string>
 		<string>BebasNeue-Regular.ttf</string>
 		<string>Lobster-Regular.ttf</string>
+		<string>OleoScriptSwashCaps-Regular.ttf</string>
 	</array>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
 		<string></string>
-		<key>UIImageRespectsSafeAreaInsets</key>
-		<true/>
 		<key>UIImageName</key>
 		<string>LaunchPage</string>
+		<key>UIImageRespectsSafeAreaInsets</key>
+		<true/>
 		<key>UILaunchScreen</key>
 		<dict/>
 	</dict>

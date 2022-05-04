@@ -10,11 +10,11 @@ import SwiftUI
 
 class Network: ObservableObject {
     @Published var weather: Welcome = Welcome.sample
-    
     var apiKey = "96342d2ddb57e5bdc8be2eb6cac5e8aa"
-
+    
+    
     func getWeather() {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=40&lon=-80&appid=\(apiKey)") else { fatalError("Missing URL") }
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=36.014&lon=129.326&appid=\(apiKey)") else { fatalError("Missing URL") }
 
         let urlRequest = URLRequest(url: url)
          

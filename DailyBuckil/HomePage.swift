@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomePage: View {
-    let weatherHow: Int = 0
+    var weatherHow: Int = 0
     let todayData = Array(1...4).map{"Buckil\($0)"}
     let recentPurchase = Array(1...4).map{"Purchase\($0)"}
     let oneColumnGrid = [
@@ -18,8 +18,10 @@ struct HomePage: View {
         GridItem(.flexible()),
         GridItem(.flexible())
     ]
-    @State var currentFont: String = fontlist.randomElement() ?? "Whisper-Regular.ttf"
+    var dailys = ListViewModel().dailys
     
+    @State var currentFont: String = fontlist.randomElement() ?? "Whisper-Regular.ttf"
+    @EnvironmentObject var network: Network
     
     
     var body: some View {
@@ -27,7 +29,8 @@ struct HomePage: View {
             ZStack{
                 ScrollView{
                     LazyVStack(pinnedViews:[.sectionHeaders]) {
-                        Section(header: HomePageNavigationBarView(weatherIndex: weatherHow, currentFont: self.$currentFont)){
+                        Section(header: HomePageNavigationBarView(currentFont: self.$currentFont)
+                            .environmentObject(Network())){
                             VStack{
                                 HStack {
                                     Text("Today's Buckil")
@@ -51,15 +54,17 @@ struct HomePage: View {
                                     
                                     
                                     HStack(){
-                                        ForEach(todayData, id: \.self) {i in
+                                        ForEach(dailys.indices, id: \.self) { index in
                                             NavigationLink {
-                                                EmptyView()
+//                                                EmptyView()
+                                                BuckilPage(item: dailys[index], currentFont: $currentFont)
                                             } label: {
-                                                Image(i)
+                                                Image("Buckil\(index+1)")
                                                     .resizable()
                                                     .frame(height: 300)
                                                     .scaledToFit()
-                                                    .aspectRatio(1, contentMode: .fit)
+                                                    .clipped()
+                                                    .aspectRatio(1, contentMode: .fill)
                                             }
                                             }
                                         Image(systemName: "arrow.forward")
@@ -84,7 +89,6 @@ struct HomePage: View {
                                                     .frame(height: 170)
                                                     .scaledToFit()
                                                     .aspectRatio(1, contentMode: .fit)
-                                                Text(i)
                                             }
                                         }
                                     }

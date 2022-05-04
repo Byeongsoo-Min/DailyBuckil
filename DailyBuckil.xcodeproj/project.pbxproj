@@ -51,6 +51,21 @@
 		8385785428213F3F002281F1 /* MultipleSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785328213F3F002281F1 /* MultipleSelection.swift */; };
 		8385785528213F3F002281F1 /* MultipleSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785328213F3F002281F1 /* MultipleSelection.swift */; };
 		8385785628213F3F002281F1 /* MultipleSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785328213F3F002281F1 /* MultipleSelection.swift */; };
+		8385785828228CBC002281F1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785728228CBC002281F1 /* LocationService.swift */; };
+		8385785928228CBC002281F1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785728228CBC002281F1 /* LocationService.swift */; };
+		8385785A28228CBC002281F1 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785728228CBC002281F1 /* LocationService.swift */; };
+		8385785C28229A4B002281F1 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785B28229A4B002281F1 /* CurrentLocationView.swift */; };
+		8385785D28229A4B002281F1 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785B28229A4B002281F1 /* CurrentLocationView.swift */; };
+		8385785E28229A4B002281F1 /* CurrentLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785B28229A4B002281F1 /* CurrentLocationView.swift */; };
+		838578642822A5F8002281F1 /* BuckilPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838578632822A5F8002281F1 /* BuckilPage.swift */; };
+		838578652822A5F8002281F1 /* BuckilPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838578632822A5F8002281F1 /* BuckilPage.swift */; };
+		838578662822A5F8002281F1 /* BuckilPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838578632822A5F8002281F1 /* BuckilPage.swift */; };
+		838578682822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838578672822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf */; };
+		838578692822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838578672822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf */; };
+		8385786A2822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 838578672822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf */; };
+		8385786C2822B26D002281F1 /* BuckilPageNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385786B2822B26D002281F1 /* BuckilPageNavigationBarView.swift */; };
+		8385786D2822B26D002281F1 /* BuckilPageNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385786B2822B26D002281F1 /* BuckilPageNavigationBarView.swift */; };
+		8385786E2822B26D002281F1 /* BuckilPageNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385786B2822B26D002281F1 /* BuckilPageNavigationBarView.swift */; };
 		83D452C9281D7087009FAB30 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C8281D7087009FAB30 /* ListViewModel.swift */; };
 		83D452CA281D7087009FAB30 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C8281D7087009FAB30 /* ListViewModel.swift */; };
 		83D452CB281D7087009FAB30 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D452C8281D7087009FAB30 /* ListViewModel.swift */; };
@@ -115,6 +130,11 @@
 		83857848281FEDDE002281F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIApp.swift; sourceTree = "<group>"; };
 		8385785328213F3F002281F1 /* MultipleSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelection.swift; sourceTree = "<group>"; };
+		8385785728228CBC002281F1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		8385785B28229A4B002281F1 /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
+		838578632822A5F8002281F1 /* BuckilPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuckilPage.swift; sourceTree = "<group>"; };
+		838578672822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OleoScriptSwashCaps-Regular.ttf"; path = "../../../../Downloads/Oleo_Script_Swash_Caps/OleoScriptSwashCaps-Regular.ttf"; sourceTree = "<group>"; };
+		8385786B2822B26D002281F1 /* BuckilPageNavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuckilPageNavigationBarView.swift; sourceTree = "<group>"; };
 		83D452C7281BF8AC009FAB30 /* DBdata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DBdata.json; sourceTree = "<group>"; };
 		83D452C8281D7087009FAB30 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		83D452CC281D70E3009FAB30 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -184,6 +204,8 @@
 				8307F1A92819230F00D3937F /* HomePage.swift */,
 				8307F1AB2819358200D3937F /* AppData.swift */,
 				8307F1AD281A6A2E00D3937F /* HomePageNavigationBarView.swift */,
+				838578632822A5F8002281F1 /* BuckilPage.swift */,
+				8385786B2822B26D002281F1 /* BuckilPageNavigationBarView.swift */,
 			);
 			path = DailyBuckil;
 			sourceTree = "<group>";
@@ -216,6 +238,7 @@
 		8307F1AF281A746800D3937F /* font */ = {
 			isa = PBXGroup;
 			children = (
+				838578672822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf */,
 				8307F1C9281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf */,
 				8307F1C8281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf */,
 				8307F1C0281A798C00D3937F /* ShadowsIntoLight-Regular.ttf */,
@@ -233,6 +256,8 @@
 				83857844281FEC7A002281F1 /* Weather2.swift */,
 				8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */,
 				83857848281FEDDE002281F1 /* Network.swift */,
+				8385785728228CBC002281F1 /* LocationService.swift */,
+				8385785B28229A4B002281F1 /* CurrentLocationView.swift */,
 			);
 			path = Weather;
 			sourceTree = "<group>";
@@ -364,6 +389,7 @@
 				8307F1B9281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
 				8307F1B1281A74B400D3937F /* BebasNeue-Regular.ttf in Resources */,
 				8307F1C1281A798D00D3937F /* ShadowsIntoLight-Regular.ttf in Resources */,
+				838578682822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +402,7 @@
 				8307F1B2281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */,
 				83D45315281FD109009FAB30 /* DBdata.json in Resources */,
 				8307F1CE281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				838578692822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf in Resources */,
 				8307F1BA281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
 				8307F1CB281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
 				8307F1B6281A756000D3937F /* Lobster-Regular.ttf in Resources */,
@@ -391,6 +418,7 @@
 				8307F1B3281A74B500D3937F /* BebasNeue-Regular.ttf in Resources */,
 				83D45316281FD109009FAB30 /* DBdata.json in Resources */,
 				8307F1CF281AD6EE00D3937F /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
+				8385786A2822A7DD002281F1 /* OleoScriptSwashCaps-Regular.ttf in Resources */,
 				8307F1BB281A756700D3937F /* WaterBrush-Regular.ttf in Resources */,
 				8307F1CC281AD6EE00D3937F /* Montserrat-VariableFont_wght.ttf in Resources */,
 				8307F1B7281A756000D3937F /* Lobster-Regular.ttf in Resources */,
@@ -404,15 +432,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838578642822A5F8002281F1 /* BuckilPage.swift in Sources */,
 				83D452D1281D71A6009FAB30 /* AppBarView.swift in Sources */,
 				8307F17D2817BDD700D3937F /* ContentView.swift in Sources */,
 				83D452CD281D70E3009FAB30 /* ListView.swift in Sources */,
 				8307F17B2817BDD700D3937F /* DailyBuckilApp.swift in Sources */,
 				8385785428213F3F002281F1 /* MultipleSelection.swift in Sources */,
+				8385786C2822B26D002281F1 /* BuckilPageNavigationBarView.swift in Sources */,
 				83857849281FEDDE002281F1 /* Network.swift in Sources */,
+				8385785C28229A4B002281F1 /* CurrentLocationView.swift in Sources */,
 				83D452D9281D72B3009FAB30 /* DailyView.swift in Sources */,
 				83857845281FEC7A002281F1 /* Weather2.swift in Sources */,
 				8307F1A52817BEAD00D3937F /* LaunchScreen.swift in Sources */,
+				8385785828228CBC002281F1 /* LocationService.swift in Sources */,
 				8385784D281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */,
 				83D452C9281D7087009FAB30 /* ListViewModel.swift in Sources */,
 				8307F1AA2819230F00D3937F /* HomePage.swift in Sources */,
@@ -427,7 +459,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8385785528213F3F002281F1 /* MultipleSelection.swift in Sources */,
+				8385786D2822B26D002281F1 /* BuckilPageNavigationBarView.swift in Sources */,
 				8385784A281FEDDE002281F1 /* Network.swift in Sources */,
+				8385785928228CBC002281F1 /* LocationService.swift in Sources */,
+				8385785D28229A4B002281F1 /* CurrentLocationView.swift in Sources */,
 				8307F18C2817BDDA00D3937F /* DailyBuckilTests.swift in Sources */,
 				83D452DA281D72B3009FAB30 /* DailyView.swift in Sources */,
 				83D452D2281D71A6009FAB30 /* AppBarView.swift in Sources */,
@@ -436,6 +471,7 @@
 				83D452CE281D70E3009FAB30 /* ListView.swift in Sources */,
 				83D452CA281D7087009FAB30 /* ListViewModel.swift in Sources */,
 				8385784E281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */,
+				838578652822A5F8002281F1 /* BuckilPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,9 +484,13 @@
 				83D452CF281D70E3009FAB30 /* ListView.swift in Sources */,
 				83D452D7281D725E009FAB30 /* Extensions.swift in Sources */,
 				83857847281FEC7A002281F1 /* Weather2.swift in Sources */,
+				8385785A28228CBC002281F1 /* LocationService.swift in Sources */,
+				838578662822A5F8002281F1 /* BuckilPage.swift in Sources */,
 				8385784F281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */,
 				8385784B281FEDDE002281F1 /* Network.swift in Sources */,
 				8307F1982817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift in Sources */,
+				8385786E2822B26D002281F1 /* BuckilPageNavigationBarView.swift in Sources */,
+				8385785E28229A4B002281F1 /* CurrentLocationView.swift in Sources */,
 				8307F1962817BDDA00D3937F /* DailyBuckilUITests.swift in Sources */,
 				83D452DB281D72B3009FAB30 /* DailyView.swift in Sources */,
 				83D452D3281D71A6009FAB30 /* AppBarView.swift in Sources */,
@@ -598,6 +638,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyBuckil/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "어플에서 사용자의 위치를 확인하려 합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -626,6 +668,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DailyBuckil/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "어플에서 사용자의 위치를 확인하려 합니다";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

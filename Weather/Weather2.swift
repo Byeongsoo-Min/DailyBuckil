@@ -43,7 +43,7 @@ struct Clouds: Codable {
 
 // MARK: - Coord
 struct Coord: Codable {
-    let lon, lat: Int
+    let lon, lat: Double
 }
 
 // MARK: - Main
@@ -65,7 +65,7 @@ struct Main: Codable {
 
 // MARK: - Sys
 struct Sys: Codable {
-    let type, id: Int
+    let type, id: Int?
     let country: String
     let sunrise, sunset: Int
 }
@@ -87,4 +87,23 @@ struct Wind: Codable {
     let speed: Double
     let deg: Int
     let gust: Double
+}
+
+func getWeatherIndex(weatherdescription:String) -> Int{
+    if (weatherdescription.contains("rain")){
+        return 2
+    }
+    else if (weatherdescription.contains("sunny")){
+        return 0
+
+    }
+    else if(weatherdescription.contains("cloud")){
+        return 1
+    }
+    else if(weatherdescription.contains("snow")){
+        return 3
+    }
+    else{
+        return 1
+    }
 }

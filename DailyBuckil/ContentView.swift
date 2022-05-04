@@ -10,21 +10,13 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        VStack {
-            Text("습도: \(network.weather.main.humidity)")
-                .padding()
-            Text("기온: \(temp)")
-            Text("description: \(description)")
-        }
-        .onAppear {
-            network.getWeather()
-        }
+        Text("hello")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(Network())
+            
     }
 }

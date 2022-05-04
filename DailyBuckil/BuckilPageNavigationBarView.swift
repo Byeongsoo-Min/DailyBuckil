@@ -1,18 +1,15 @@
 //
-//  NavigationBarTitleSuperView.swift
+//  BuckilPageNavigationBarView.swift
 //  DailyBuckil
 //
-//  Created by MBSoo on 2022/04/28.
+//  Created by MBSoo on 2022/05/04.
 //
 
 import SwiftUI
 
-struct HomePageNavigationBarView: View {
+struct BuckilPageNavigationBarView: View {
     @Binding var currentFont: String
-    @EnvironmentObject var network: Network
-    var temp: String { String(format: "%.1f", (network.weather.main.temp - 273.15)) }
-    var description: String { network.weather.weather.first?.weatherDescription ?? "" }
-    var weatherIndex: Int {getWeatherIndex(weatherdescription: description)}
+    var Item:Daily
     var body: some View {
         VStack{
             
@@ -21,22 +18,19 @@ struct HomePageNavigationBarView: View {
                 .fontWeight(.bold)
                 .foregroundColor(Color("MainColor"))
             HStack() {
-                Text("Today's Weather")
+                Text("The Weather then")
                     .fontWeight(.bold)
                 Spacer()
-                Image(systemName: Weather(weather: weatherIndex).image)
-                Text(temp)
+                Image(systemName: Weather(weather: Item.weatherCode).image)
+                Text(String(Item.weatherThen))
                     .fontWeight(.bold)
                 
             }
             .frame(width: .infinity, alignment: .topLeading)
             .padding()
-            .foregroundColor(Weather(weather: weatherIndex).color)
+            .foregroundColor(Weather(weather: Item.weatherCode).color)
             .font(.custom(currentFont, size: 30))
             
-        }
-        .onAppear {
-            network.getWeather()
         }
         .background(.white)
         

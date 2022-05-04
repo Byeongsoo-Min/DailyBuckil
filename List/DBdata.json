@@ -8,7 +8,9 @@
         "tagsTPO": ["데이트룩", "새내기룩"],
         "dress": "꾸꾸꾸",
         "tagsSeason": ["봄"],
-        "tagsAge": "20대"
+        "tagsAge": "20대",
+        "weatherThen": 15,
+        "weatherCode": 0
     },
     {
         
@@ -20,7 +22,9 @@
         "tagsTPO": ["데이트룩", "새내기룩"],
         "dress": "꾸안꾸",
         "tagsSeason": ["봄"],
-        "tagsAge": "20대"
+        "tagsAge": "20대",
+        "weatherThen": 18,
+        "weatherCode": 0
     },
     {
         
@@ -32,7 +36,9 @@
         "tagsTPO": ["데이트룩"],
         "dress": "꾸꾸꾸",
         "tagsSeason": ["겨울", "봄", "꽃샘추위"],
-        "tagsAge": "20대"
+        "tagsAge": "20대",
+        "weatherThen": 6,
+        "weatherCode": 1
     },
     {
         
@@ -44,7 +50,9 @@
         "tagsTPO": ["데이트룩"],
         "dress": "꾸꾸꾸",
         "tagsSeason": ["겨울", "봄", "꽃샘추위"],
-        "tagsAge": "20대"
+        "tagsAge": "20대",
+        "weatherThen": 5,
+        "weatherCode": 1
     },
     {
         
@@ -56,7 +64,9 @@
         "tagsTPO": ["새내기룩", "캠퍼스룩"],
         "dress": "꾸안꾸",
         "tagsSeason": ["봄", "겨울", "꽃샘추위"],
-        "tagsAge": "20대"
+        "tagsAge": "20대",
+        "weatherThen": 13,
+        "weatherCode": 0
     },
     {
         
@@ -68,6 +78,8 @@
         "tagsTPO": ["데이트룩", "새내기룩", "캠퍼스룩"],
         "dress": "꾸안꾸",
         "tagsSeason": ["봄"],
-        "tagsAge": "20대"
+        "tagsAge": "20대",
+        "weatherThen": 19,
+        "weatherCode": 0
     }
 ]
