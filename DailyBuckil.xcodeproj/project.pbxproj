@@ -62,6 +62,9 @@
 		832CCF3028240896003425AD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF2F28240896003425AD /* Montserrat-Black.ttf */; };
 		832CCF3128240896003425AD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF2F28240896003425AD /* Montserrat-Black.ttf */; };
 		832CCF3228240896003425AD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF2F28240896003425AD /* Montserrat-Black.ttf */; };
+		832CCF3428241AF3003425AD /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CCF3328241AF3003425AD /* SplashScreenView.swift */; };
+		832CCF3528241AF3003425AD /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CCF3328241AF3003425AD /* SplashScreenView.swift */; };
+		832CCF3628241AF3003425AD /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CCF3328241AF3003425AD /* SplashScreenView.swift */; };
 		83857845281FEC7A002281F1 /* Weather2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83857844281FEC7A002281F1 /* Weather2.swift */; };
 		83857846281FEC7A002281F1 /* Weather2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83857844281FEC7A002281F1 /* Weather2.swift */; };
 		83857847281FEC7A002281F1 /* Weather2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83857844281FEC7A002281F1 /* Weather2.swift */; };
@@ -158,6 +161,7 @@
 		832CCF2B2823FBC8003425AD /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
 		832CCF2D2823FCD3003425AD /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		832CCF2F28240896003425AD /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../../../../Desktop/Montserrat/static/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		832CCF3328241AF3003425AD /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		83857844281FEC7A002281F1 /* Weather2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather2.swift; sourceTree = "<group>"; };
 		83857848281FEDDE002281F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIApp.swift; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 				8307F1AD281A6A2E00D3937F /* HomePageNavigationBarView.swift */,
 				838578632822A5F8002281F1 /* BuckilPage.swift */,
 				8385786B2822B26D002281F1 /* BuckilPageNavigationBarView.swift */,
+				832CCF3328241AF3003425AD /* SplashScreenView.swift */,
 			);
 			path = DailyBuckil;
 			sourceTree = "<group>";
@@ -491,6 +496,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838578642822A5F8002281F1 /* BuckilPage.swift in Sources */,
+				832CCF3428241AF3003425AD /* SplashScreenView.swift in Sources */,
 				832CCF2C2823FBC8003425AD /* MyWebView.swift in Sources */,
 				83D452D1281D71A6009FAB30 /* AppBarView.swift in Sources */,
 				8307F17D2817BDD700D3937F /* ContentView.swift in Sources */,
@@ -533,6 +539,7 @@
 				83D452DA281D72B3009FAB30 /* DailyView.swift in Sources */,
 				83D452D2281D71A6009FAB30 /* AppBarView.swift in Sources */,
 				83857846281FEC7A002281F1 /* Weather2.swift in Sources */,
+				832CCF3528241AF3003425AD /* SplashScreenView.swift in Sources */,
 				83D452D6281D725E009FAB30 /* Extensions.swift in Sources */,
 				83D452CE281D70E3009FAB30 /* ListView.swift in Sources */,
 				83D452CA281D7087009FAB30 /* ListViewModel.swift in Sources */,
@@ -554,6 +561,7 @@
 				8323AA2B2823D3740096EC93 /* PurchaseView.swift in Sources */,
 				83D452D7281D725E009FAB30 /* Extensions.swift in Sources */,
 				83857847281FEC7A002281F1 /* Weather2.swift in Sources */,
+				832CCF3628241AF3003425AD /* SplashScreenView.swift in Sources */,
 				8385785A28228CBC002281F1 /* LocationService.swift in Sources */,
 				838578662822A5F8002281F1 /* BuckilPage.swift in Sources */,
 				8323AA232823CD840096EC93 /* PurchaseListView.swift in Sources */,

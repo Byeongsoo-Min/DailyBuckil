@@ -21,13 +21,6 @@
 		<string>Montserrat-Black.ttf</string>
 	</array>
 	<key>UILaunchScreen</key>
-	<dict>
-		<key>UIImageName</key>
-		<string>LaunchPage</string>
-		<key>UIImageRespectsSafeAreaInsets</key>
-		<false/>
-		<key>UILaunchScreen</key>
-		<dict/>
-	</dict>
+	<dict/>
 </dict>
 </plist>
