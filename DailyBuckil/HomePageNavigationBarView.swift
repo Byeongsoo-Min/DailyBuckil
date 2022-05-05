@@ -29,7 +29,7 @@ struct HomePageNavigationBarView: View {
                     .fontWeight(.bold)
                 
             }
-            .frame(width: .infinity, alignment: .topLeading)
+//            .frame(width: .infinity, alignment: .topLeading)
             .padding()
             .foregroundColor(Weather(weather: weatherIndex).color)
             .font(.custom(currentFont, size: 30))

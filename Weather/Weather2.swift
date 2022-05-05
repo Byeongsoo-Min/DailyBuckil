@@ -93,7 +93,7 @@ func getWeatherIndex(weatherdescription:String) -> Int{
     if (weatherdescription.contains("rain")){
         return 2
     }
-    else if (weatherdescription.contains("sunny")){
+    else if (weatherdescription.contains("clear")){
         return 0
 
     }

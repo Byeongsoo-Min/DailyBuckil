@@ -14,28 +14,25 @@ struct BuckilPageNavigationBarView: View {
         VStack{
             
             Text("Daily Buckil")
-                .font(.custom(currentFont, size: 40))
+                .font(.custom(currentFont, size: 25))
                 .fontWeight(.bold)
                 .foregroundColor(Color("MainColor"))
             HStack() {
+                Spacer()
                 Text("The Weather then")
                     .fontWeight(.bold)
-                Spacer()
                 Image(systemName: Weather(weather: Item.weatherCode).image)
                 Text(String(Item.weatherThen))
                     .fontWeight(.bold)
-                
+                Spacer()
             }
-            .frame(width: .infinity, alignment: .topLeading)
+//            .frame(width: .infinity, alignment: .topLeading)
             .padding()
             .foregroundColor(Weather(weather: Item.weatherCode).color)
-            .font(.custom(currentFont, size: 30))
+            .font(.custom(currentFont, size: 20))
             
         }
         .background(.white)
-        
-        Divider()
-        
     }
     
     

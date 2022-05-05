@@ -10,7 +10,9 @@
         "tagsSeason": ["봄"],
         "tagsAge": "20대",
         "weatherThen": 15,
-        "weatherCode": 0
+        "weatherCode": 0,
+        "clothes" : ["Buckil1outer", "Buckil1semiouter", "Buckil1top", "Buckil1pants", "Buckil1shoes", "Buckil1cap", "Buckil1glasses", "Buckil1belt", "Buckil1socks", "Buckil1accessories"],
+        "bestClothes" : [3,4]
     },
     {
         
@@ -24,7 +26,9 @@
         "tagsSeason": ["봄"],
         "tagsAge": "20대",
         "weatherThen": 18,
-        "weatherCode": 0
+        "weatherCode": 0,
+        "clothes" : ["Buckil2outer", "Buckil2semiouter", "Buckil2top", "Buckil2pants", "Buckil2shoes", "Buckil2cap", "Buckil2glasses", "Buckil2belt", "Buckil2socks", "Buckil2accessories"],
+        "bestClothes" : [2,4]
     },
     {
         
@@ -38,7 +42,9 @@
         "tagsSeason": ["겨울", "봄", "꽃샘추위"],
         "tagsAge": "20대",
         "weatherThen": 6,
-        "weatherCode": 1
+        "weatherCode": 1,
+        "clothes" : ["Buckil3outer", "Buckil3semiouter", "Buckil3top", "Buckil3pants", "Buckil3shoes", "Buckil3cap", "Buckil3glasses", "Buckil3belt", "Buckil3socks", "Buckil3accessories"],
+        "bestClothes" : [0,4]
     },
     {
         
@@ -52,7 +58,9 @@
         "tagsSeason": ["겨울", "봄", "꽃샘추위"],
         "tagsAge": "20대",
         "weatherThen": 5,
-        "weatherCode": 1
+        "weatherCode": 1,
+        "clothes" : ["Buckil4outer", "Buckil4semiouter", "Buckil4top", "Buckil4pants", "Buckil4shoes", "Buckil4cap", "Buckil4glasses", "Buckil4belt", "Buckil4socks", "Buckil4accessories"],
+        "bestClothes" : [0,1]
     },
     {
         
@@ -66,7 +74,9 @@
         "tagsSeason": ["봄", "겨울", "꽃샘추위"],
         "tagsAge": "20대",
         "weatherThen": 13,
-        "weatherCode": 0
+        "weatherCode": 0,
+        "clothes" : ["Buckil5outer", "Buckil5semiouter", "Buckil5top", "Buckil5pants", "Buckil5shoes", "Buckil5cap", "Buckil5glasses", "Buckil5belt", "Buckil5ocks", "Buckil5accessories"],
+        "bestClothes" : [2,4]
     },
     {
         
@@ -80,6 +90,8 @@
         "tagsSeason": ["봄"],
         "tagsAge": "20대",
         "weatherThen": 19,
-        "weatherCode": 0
+        "weatherCode": 0,
+        "clothes" : ["Buckil6outer", "Buckil6semiouter", "Buckil6top", "Buckil6pants", "Buckil6shoes", "Buckil6cap", "Buckil6glasses", "Buckil6belt", "Buckil6socks", "Buckil6accessories"],
+        "bestClothes" : [2,4]
     }
 ]

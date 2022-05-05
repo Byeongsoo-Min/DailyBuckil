@@ -21,8 +21,13 @@ struct Daily: Codable, Hashable {
     var tagsAge: Age
     var weatherThen: Double
     var weatherCode: Int
+    var clothes : [String]
+    var bestClothes: [Int]
+    
+    
+    //clothes = ["outer", "semiouter", "top", "pants", "shoes", "cap", "glasses", "belt", "socks", "accessories"]
     enum CodingKeys: String, CodingKey {
-        case imageURL, name, location, money, tagsSeason, tagsAge, dress, weatherThen, weatherCode
+        case imageURL, name, location, money, tagsSeason, tagsAge, dress, weatherThen, weatherCode, clothes, bestClothes
         case type = "season"
         case tagsTPO = "tagsTPO"
     }
