@@ -14,11 +14,13 @@ struct Purchase: Codable, Hashable{
     let imageURL: String
     let name: String
     let money: Int
+    var link: String
     var tagsTPO: [TPO]
     var tagsSeason: [String]
     
+    
     enum CodingKeys: String, CodingKey{
-        case imageURL, name, money, tagsTPO, tagsSeason
+        case imageURL, name, money, tagsTPO, tagsSeason, link
         case type = "clothesType"
     }
     

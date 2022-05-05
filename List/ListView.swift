@@ -30,7 +30,7 @@ struct ListView: View {
                                     .foregroundColor(Color("MainColor"))
                                 Text ("Back")
                                     .foregroundColor(Color("MainColor"))
-                                    .font(.custom(currentFont, size: 15))
+                                    .font(.custom(currentFont, size: 18))
                             }
                         }
                         .frame(height: 70.0)

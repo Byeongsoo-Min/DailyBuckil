@@ -2,6 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Montserrat-Italic-VariableFont_wght.ttf</string>
@@ -13,6 +18,7 @@
 		<string>Lobster-Regular.ttf</string>
 		<string>OleoScriptSwashCaps-Regular.ttf</string>
 		<string>Pretendard-Bold.otf</string>
+		<string>Montserrat-Black.ttf</string>
 	</array>
 	<key>UILaunchScreen</key>
 	<dict>

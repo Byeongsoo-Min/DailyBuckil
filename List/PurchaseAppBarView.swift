@@ -37,9 +37,6 @@ struct PurchaseAppBarView: View {
         
         VStack {
             HStack {
-                // Doing nothing. Just for decoration
-                
-                
                 Spacer()
                 
                 // Search bar

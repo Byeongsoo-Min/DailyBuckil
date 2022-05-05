@@ -6,6 +6,7 @@
         "money": 79000,
         "tagsTPO": ["데이트룩", "새내기룩", "동네마실룩", "캐주얼룩"],
         "tagsSeason": ["봄", "여름", "초여름", "초가을"],
+        "link": "https://www.musinsa.com/app/goods/2430924/0"
     },
     {
         "clothesType": ["pants"],
@@ -14,6 +15,7 @@
         "money": 139000,
         "tagsTPO": ["데이트룩", "새내기룩", "캠퍼스룩"],
         "tagsSeason": ["봄", "초여름", "초가을", "가을", "겨울", "초겨울", "초봄"],
+        "link": "https://www.musinsa.com/app/goods/2411327/0"
     },
     {
         
@@ -23,6 +25,7 @@
         "money": 49900,
         "tagsTPO": ["새내기룩", "캠퍼스룩", "동네마실룩", "캐주얼룩"],
         "tagsSeason": ["봄", "여름", "가을", "초봄", "초여름", "초가을"],
+        "link": "https://www.musinsa.com/app/goods/2412161/0"
     },
     {
         
@@ -32,5 +35,6 @@
         "money": 36000,
         "tagsTPO": ["캠퍼스룩", "동네마실룩", "캐주얼룩"],
         "tagsSeason": ["봄", "여름", "초여름", "초가을"],
+        "link": "https://www.musinsa.com/app/goods/1931526/0"
     }
 ]

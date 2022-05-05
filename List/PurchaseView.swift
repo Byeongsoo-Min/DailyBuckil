@@ -9,15 +9,21 @@ import SwiftUI
 
 struct PurchaseView: View {
     let purchase: Purchase
-    
+    @State private var showModal = false
     var body: some View {
         VStack {
-            Image(purchase.imageURL)
-                .resizable()
-                .scaledToFill()
-                .frame(width: UIScreen.main.bounds.width-50, height: 200, alignment: .center)
-                .clipped()
-            
+            Button(action: {
+                self.showModal = true
+            }){
+                Image(purchase.imageURL)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: UIScreen.main.bounds.width-50, height: 200, alignment: .center)
+                    .clipped()
+            }
+            .sheet(isPresented: self.$showModal) {
+                MyWebView(urlToLoad: purchase.link)
+            } //Button 끝
             
             VStack {
                 HStack {
@@ -36,7 +42,7 @@ struct PurchaseView: View {
                         .foregroundColor(.yellow)
                     Text(String(purchase.money))
                         .padding(.trailing)
-                    //                    Text(store.type.rawValue)
+                    
                         .foregroundColor(.gray)
                     Spacer()
                 }
@@ -55,5 +61,6 @@ struct PurchaseView: View {
             .frame(width: UIScreen.main.bounds.width-50)
         }
     }
+    
 }
 

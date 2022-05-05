@@ -37,9 +37,6 @@ struct AppBarView: View {
         
         VStack {
             HStack {
-                // Doing nothing. Just for decoration
-                
-                
                 Spacer()
                 
                 // Search bar
@@ -109,15 +106,17 @@ struct AppBarView: View {
                            .pickerStyle(.menu)
                            .padding(.vertical, -5)
                            .encapulate(borderColor: .gray)
-                           .font(<#T##font: Font?##Font?#>)
+                           
                     Picker(selectedTPO.rawValue, selection: $selectedTPO){
                         ForEach(TPO.allCases, id: \.self) { value in
                             if(value.rawValue == "전체"){
                                 Text("TPO: \(value.rawValue)")
+                                    .font(.custom("Pretendard-Bold.otf", size: 7))
                                     .tag(value)
                             }
                             else{
                                 Text("\(value.rawValue)")
+                                    .font(.custom("Pretendard-Bold.otf", size: 7))
                                     .tag(value)
                             }
                         }

@@ -17,6 +17,7 @@ struct BuckilPageNavigationBarView: View {
                 .font(.custom(currentFont, size: 25))
                 .fontWeight(.bold)
                 .foregroundColor(Color("MainColor"))
+                .frame(height: 25, alignment: .center)
             HStack() {
                 Spacer()
                 Text("The Weather then")
@@ -30,7 +31,8 @@ struct BuckilPageNavigationBarView: View {
             .padding()
             .foregroundColor(Weather(weather: Item.weatherCode).color)
             .font(.custom(currentFont, size: 20))
-            
+            .frame(height: 20)
+            .padding(.vertical)
         }
         .background(.white)
     }

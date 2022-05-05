@@ -19,10 +19,10 @@ struct HomePage: View {
         GridItem(.flexible())
     ]
     var dailys = ListViewModel().dailys
-    
-    @State var currentFont: String = fontlist.randomElement() ?? "Whisper-Regular.ttf"
+    @ObservedObject var viewModel = PurchaseListViewModel()
+    @State var currentFont: String = fontlist.randomElement() ?? "Montserrat-Black"
     @EnvironmentObject var network: Network
-    
+    @State private var showModal = false
     
     var body: some View {
         NavigationView {
@@ -35,7 +35,8 @@ struct HomePage: View {
                                 HStack {
                                     Text("Today's Buckil")
                                         .foregroundColor(Color("MainColor"))
-                                        .font(.custom(currentFont, size: 30))
+                                        .font(.custom(currentFont, size: 24))
+                                        .frame(height: 24, alignment: .leading)
                                         .padding(.horizontal)
                                         .padding(.vertical)
                                     Spacer()
@@ -44,7 +45,7 @@ struct HomePage: View {
                                             .navigationBarHidden(true)
                                     } label: {
                                         Image(systemName: "arrow.forward")
-                                            .frame(width: 45, height: 45)
+                                            .frame(width: 45, height: 30)
                                             .foregroundColor(Color("MainColor"))
                                     }
                                     
@@ -65,6 +66,7 @@ struct HomePage: View {
                                                     .scaledToFit()
                                                     .clipped()
                                                     .aspectRatio(1, contentMode: .fill)
+                                                
                                             }
                                             }
                                     }
@@ -75,7 +77,7 @@ struct HomePage: View {
                                     HStack{
                                         Text("Recent Purchase")
                                             .foregroundColor(Color("MainColor"))
-                                            .font(.custom(currentFont, size: 30))
+                                            .font(.custom(currentFont, size: 24))
                                             .padding(.horizontal)
                                             .padding(.vertical)
                                         Spacer()
@@ -84,18 +86,26 @@ struct HomePage: View {
                                                 .navigationBarHidden(true)
                                         } label: {
                                             Image(systemName: "arrow.forward")
-                                                .frame(width: 45, height: 45)
+                                                .frame(width: 45, height: 30)
                                                 .foregroundColor(Color("MainColor"))
                                         }
                                     }
                                     LazyVGrid(columns: twoColumnGrid, spacing: 20){
-                                        ForEach(recentPurchase, id: \.self) {i in
+                                        ForEach(viewModel.purchase, id: \.self) {i in
                                             VStack{
-                                                Image(i)
-                                                    .resizable()
-                                                    .frame(height: 170)
-                                                    .scaledToFit()
-                                                    .aspectRatio(1, contentMode: .fit)
+                                                Button(action: {
+                                                    self.showModal = true
+                                                }){
+                                                    Image(i.imageURL)
+                                                        .resizable()
+                                                        .frame(height: 170)
+                                                        .scaledToFit()
+                                                        .aspectRatio(1, contentMode: .fit)
+                                                }
+                                                .sheet(isPresented: self.$showModal) {
+                                                    MyWebView(urlToLoad: i.link)
+                                                } //Button 끝
+                                                
                                             }
                                         }
                                     }
