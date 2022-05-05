@@ -1,14 +1,14 @@
 //
-//  AppBarView.swift
+//  PurchaseAppBarView.swift
 //  DailyBuckil
 //
-//  Created by MBSoo on 2022/04/30.
+//  Created by MBSoo on 2022/05/05.
 //
 
 import SwiftUI
 
-struct AppBarView: View {
-    @EnvironmentObject var viewModel: ListViewModel
+struct PurchaseAppBarView: View {
+    @EnvironmentObject var viewModel: PurchaseListViewModel
     
     // var deciding whether show search bar or not.
     @State var showSearchBar = false
@@ -16,8 +16,8 @@ struct AppBarView: View {
     @State var selections: [String] = []
     // Got from ListView
     @Binding var inputText: String
-    @Binding var seletedSeason: Season
-    @Binding var dressup: Bool
+    @Binding var seletedClothes: ClothesType
+    @Binding var selectedSeason: Season
     @Binding var selectedTPO: TPO
     @Binding var currentFont: String
     //    @Binding var selected
@@ -91,11 +91,11 @@ struct AppBarView: View {
                             viewModel.sortList(by: viewModel.ratingSort)
                         }
                     
-                    Picker(seletedSeason.rawValue,
-                           selection: $seletedSeason) {
-                        ForEach(Season.allCases, id: \.self) { value in
+                    Picker(seletedClothes.rawValue,
+                           selection: $seletedClothes) {
+                        ForEach(ClothesType.allCases, id: \.self) { value in
                             if(value.rawValue == "전체"){
-                                Text("계절: \(value.rawValue)")
+                                Text("옷 종류: \(value.rawValue)")
                                     .tag(value)
                             }
                             else{
@@ -109,7 +109,7 @@ struct AppBarView: View {
                            .pickerStyle(.menu)
                            .padding(.vertical, -5)
                            .encapulate(borderColor: .gray)
-                           .font(<#T##font: Font?##Font?#>)
+                    
                     Picker(selectedTPO.rawValue, selection: $selectedTPO){
                         ForEach(TPO.allCases, id: \.self) { value in
                             if(value.rawValue == "전체"){
@@ -127,19 +127,23 @@ struct AppBarView: View {
                     .padding(.vertical, -5)
                     .encapulate(borderColor: .gray)
                     
-                    if dressup {
-                        Text("오늘은 힘 좀 줘볼까")
-                            .encapulate(color: .blue.opacity(0.8), foregroundColor: .white)
-                            .onTapGesture {
-                                dressup.toggle()
+                    
+                    Picker(selectedSeason.rawValue, selection: $selectedSeason){
+                        ForEach(Season.allCases, id: \.self) { value in
+                            if(value.rawValue == "전체"){
+                                Text("계절: \(value.rawValue)")
+                                    .tag(value)
                             }
-                    } else {
-                        Text("오늘은 힘 좀 줘볼까")
-                            .encapulate(borderColor: .gray)
-                            .onTapGesture {
-                                dressup.toggle()
+                            else{
+                                Text("\(value.rawValue)")
+                                    .tag(value)
                             }
+                        }
                     }
+                    .colorMultiply(.black)
+                    .pickerStyle(.menu)
+                    .padding(.vertical, -5)
+                    .encapulate(borderColor: .gray)
                 }
                 .padding(.vertical, 3)
             }

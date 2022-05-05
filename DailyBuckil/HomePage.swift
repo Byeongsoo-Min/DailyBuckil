@@ -67,7 +67,6 @@ struct HomePage: View {
                                                     .aspectRatio(1, contentMode: .fill)
                                             }
                                             }
-                                        Image(systemName: "arrow.forward")
                                     }
                                 }
                                 
@@ -80,6 +79,14 @@ struct HomePage: View {
                                             .padding(.horizontal)
                                             .padding(.vertical)
                                         Spacer()
+                                        NavigationLink {
+                                            PurchaseListView(currentFont: $currentFont)
+                                                .navigationBarHidden(true)
+                                        } label: {
+                                            Image(systemName: "arrow.forward")
+                                                .frame(width: 45, height: 45)
+                                                .foregroundColor(Color("MainColor"))
+                                        }
                                     }
                                     LazyVGrid(columns: twoColumnGrid, spacing: 20){
                                         ForEach(recentPurchase, id: \.self) {i in

@@ -1,18 +1,18 @@
 //
-//  StoreView.swift
+//  PurchaseView.swift
 //  DailyBuckil
 //
-//  Created by MBSoo on 2022/04/30.
+//  Created by MBSoo on 2022/05/05.
 //
 
 import SwiftUI
 
-struct DailyView: View {
-    let daily: Daily
+struct PurchaseView: View {
+    let purchase: Purchase
     
     var body: some View {
         VStack {
-            Image(daily.imageURL)
+            Image(purchase.imageURL)
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width-50, height: 200, alignment: .center)
@@ -21,7 +21,7 @@ struct DailyView: View {
             
             VStack {
                 HStack {
-                    Text(daily.name)
+                    Text(purchase.name)
                         .font(.title)
                         .bold()
                     Spacer()
@@ -34,7 +34,7 @@ struct DailyView: View {
                         .scaledToFit()
                         .frame(width: 20, height: 20)
                         .foregroundColor(.yellow)
-                    Text(String(daily.money))
+                    Text(String(purchase.money))
                         .padding(.trailing)
                     //                    Text(store.type.rawValue)
                         .foregroundColor(.gray)
@@ -43,7 +43,7 @@ struct DailyView: View {
                 .padding(.bottom, 1)
                 ScrollView(.horizontal) {
                     HStack {
-                        ForEach(daily.tagsTPO, id: \.self) { tag in
+                        ForEach(purchase.tagsTPO, id: \.self) { tag in
                             Text(tag.rawValue)
                                 .encapulate(color: .black.opacity(0.8), foregroundColor : .white)
                         }

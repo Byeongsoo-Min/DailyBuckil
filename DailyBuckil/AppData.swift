@@ -9,6 +9,37 @@ import Foundation
 import SwiftUI
 
 
+struct Purchase: Codable, Hashable{
+    let type: [ClothesType]
+    let imageURL: String
+    let name: String
+    let money: Int
+    var tagsTPO: [TPO]
+    var tagsSeason: [String]
+    
+    enum CodingKeys: String, CodingKey{
+        case imageURL, name, money, tagsTPO, tagsSeason
+        case type = "clothesType"
+    }
+    
+}
+
+enum ClothesType: String, Codable, CaseIterable{
+    case all = "전체"
+    case outer = "outer"
+    case semiouter = "semiouter"
+    case top = "top"
+    case pants = "pants"
+    case shoes = "shoes"
+    case cap = "cap"
+    case glasses = "glasses"
+    case belt = "belt"
+    case socks = "socks"
+    case accessories = "accessories"
+
+}
+
+
 struct Daily: Codable, Hashable {
     let type: [Season]
     let imageURL: String

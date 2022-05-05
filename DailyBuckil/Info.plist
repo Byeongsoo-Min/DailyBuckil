@@ -12,15 +12,14 @@
 		<string>BebasNeue-Regular.ttf</string>
 		<string>Lobster-Regular.ttf</string>
 		<string>OleoScriptSwashCaps-Regular.ttf</string>
+		<string>Pretendard-Bold.otf</string>
 	</array>
 	<key>UILaunchScreen</key>
 	<dict>
-		<key>UIColorName</key>
-		<string></string>
 		<key>UIImageName</key>
 		<string>LaunchPage</string>
 		<key>UIImageRespectsSafeAreaInsets</key>
-		<true/>
+		<false/>
 		<key>UILaunchScreen</key>
 		<dict/>
 	</dict>

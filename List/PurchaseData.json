@@ -1,0 +1,36 @@
+[
+    {
+        "clothesType": ["shoes"],
+        "imageURL":"Purchase1",
+        "name": "스타일 36 뮬 - (캔버스) 문라이트 블루:트루 화이트",
+        "money": 79000,
+        "tagsTPO": ["데이트룩", "새내기룩", "동네마실룩", "캐주얼룩"],
+        "tagsSeason": ["봄", "여름", "초여름", "초가을"],
+    },
+    {
+        "clothesType": ["pants"],
+        "imageURL":"Purchase2",
+        "name": "깡스타일리스트 X 플랙 베를린 K48 화이트",
+        "money": 139000,
+        "tagsTPO": ["데이트룩", "새내기룩", "캠퍼스룩"],
+        "tagsSeason": ["봄", "초여름", "초가을", "가을", "겨울", "초겨울", "초봄"],
+    },
+    {
+        
+        "clothesType": ["outer", "semiouter"],
+        "imageURL":"Purchase3",
+        "name": "린넨코튼 스트링 셔츠자켓_LightKhaky",
+        "money": 49900,
+        "tagsTPO": ["새내기룩", "캠퍼스룩", "동네마실룩", "캐주얼룩"],
+        "tagsSeason": ["봄", "여름", "가을", "초봄", "초여름", "초가을"],
+    },
+    {
+        
+        "clothesType": ["pants"],
+        "imageURL":"Purchase4",
+        "name": "테이퍼드 와이드 원턱 린넨 팬츠_Martine Olive",
+        "money": 36000,
+        "tagsTPO": ["캠퍼스룩", "동네마실룩", "캐주얼룩"],
+        "tagsSeason": ["봄", "여름", "초여름", "초가을"],
+    }
+]
