@@ -27,7 +27,6 @@ struct BuckilPageNavigationBarView: View {
                     .fontWeight(.bold)
                 Spacer()
             }
-//            .frame(width: .infinity, alignment: .topLeading)
             .padding()
             .foregroundColor(Weather(weather: Item.weatherCode).color)
             .font(.custom(currentFont, size: 20))

@@ -14,7 +14,6 @@
 		8307F18C2817BDDA00D3937F /* DailyBuckilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F18B2817BDDA00D3937F /* DailyBuckilTests.swift */; };
 		8307F1962817BDDA00D3937F /* DailyBuckilUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1952817BDDA00D3937F /* DailyBuckilUITests.swift */; };
 		8307F1982817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1972817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift */; };
-		8307F1A52817BEAD00D3937F /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1A42817BEAD00D3937F /* LaunchScreen.swift */; };
 		8307F1AA2819230F00D3937F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1A92819230F00D3937F /* HomePage.swift */; };
 		8307F1AC2819358200D3937F /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1AB2819358200D3937F /* AppData.swift */; };
 		8307F1AE281A6A2E00D3937F /* HomePageNavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8307F1AD281A6A2E00D3937F /* HomePageNavigationBarView.swift */; };
@@ -58,7 +57,6 @@
 		832CCF282823E2E6003425AD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF262823E2E6003425AD /* Pretendard-Bold.otf */; };
 		832CCF292823E2E6003425AD /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF262823E2E6003425AD /* Pretendard-Bold.otf */; };
 		832CCF2C2823FBC8003425AD /* MyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CCF2B2823FBC8003425AD /* MyWebView.swift */; };
-		832CCF2E2823FCD3003425AD /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832CCF2D2823FCD3003425AD /* PracticeView.swift */; };
 		832CCF3028240896003425AD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF2F28240896003425AD /* Montserrat-Black.ttf */; };
 		832CCF3128240896003425AD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF2F28240896003425AD /* Montserrat-Black.ttf */; };
 		832CCF3228240896003425AD /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 832CCF2F28240896003425AD /* Montserrat-Black.ttf */; };
@@ -71,9 +69,6 @@
 		83857849281FEDDE002281F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83857848281FEDDE002281F1 /* Network.swift */; };
 		8385784A281FEDDE002281F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83857848281FEDDE002281F1 /* Network.swift */; };
 		8385784B281FEDDE002281F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83857848281FEDDE002281F1 /* Network.swift */; };
-		8385784D281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */; };
-		8385784E281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */; };
-		8385784F281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */; };
 		8385785428213F3F002281F1 /* MultipleSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785328213F3F002281F1 /* MultipleSelection.swift */; };
 		8385785528213F3F002281F1 /* MultipleSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785328213F3F002281F1 /* MultipleSelection.swift */; };
 		8385785628213F3F002281F1 /* MultipleSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8385785328213F3F002281F1 /* MultipleSelection.swift */; };
@@ -140,7 +135,6 @@
 		8307F1912817BDDA00D3937F /* DailyBuckilUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DailyBuckilUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8307F1952817BDDA00D3937F /* DailyBuckilUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBuckilUITests.swift; sourceTree = "<group>"; };
 		8307F1972817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyBuckilUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8307F1A42817BEAD00D3937F /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		8307F1A628180EF500D3937F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8307F1A92819230F00D3937F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		8307F1AB2819358200D3937F /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
@@ -159,12 +153,10 @@
 		8323AA2C2823D55A0096EC93 /* PurchaseAppBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseAppBarView.swift; sourceTree = "<group>"; };
 		832CCF262823E2E6003425AD /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../Downloads/Pretendard-1/public/static/Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		832CCF2B2823FBC8003425AD /* MyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWebView.swift; sourceTree = "<group>"; };
-		832CCF2D2823FCD3003425AD /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 		832CCF2F28240896003425AD /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Black.ttf"; path = "../../../../Desktop/Montserrat/static/Montserrat-Black.ttf"; sourceTree = "<group>"; };
 		832CCF3328241AF3003425AD /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		83857844281FEC7A002281F1 /* Weather2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather2.swift; sourceTree = "<group>"; };
 		83857848281FEDDE002281F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIApp.swift; sourceTree = "<group>"; };
 		8385785328213F3F002281F1 /* MultipleSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelection.swift; sourceTree = "<group>"; };
 		8385785728228CBC002281F1 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		8385785B28229A4B002281F1 /* CurrentLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationView.swift; sourceTree = "<group>"; };
@@ -237,7 +229,6 @@
 				8307F17A2817BDD700D3937F /* DailyBuckilApp.swift */,
 				8307F17C2817BDD700D3937F /* ContentView.swift */,
 				8307F1802817BDDA00D3937F /* Preview Content */,
-				8307F1A42817BEAD00D3937F /* LaunchScreen.swift */,
 				8307F1A92819230F00D3937F /* HomePage.swift */,
 				8307F1AB2819358200D3937F /* AppData.swift */,
 				8307F1AD281A6A2E00D3937F /* HomePageNavigationBarView.swift */,
@@ -294,7 +285,6 @@
 			isa = PBXGroup;
 			children = (
 				832CCF2B2823FBC8003425AD /* MyWebView.swift */,
-				832CCF2D2823FCD3003425AD /* PracticeView.swift */,
 			);
 			path = WebView;
 			sourceTree = "<group>";
@@ -303,7 +293,6 @@
 			isa = PBXGroup;
 			children = (
 				83857844281FEC7A002281F1 /* Weather2.swift */,
-				8385784C281FEE4B002281F1 /* WeatherAPIApp.swift */,
 				83857848281FEDDE002281F1 /* Network.swift */,
 				8385785728228CBC002281F1 /* LocationService.swift */,
 				8385785B28229A4B002281F1 /* CurrentLocationView.swift */,
@@ -510,14 +499,11 @@
 				8385785C28229A4B002281F1 /* CurrentLocationView.swift in Sources */,
 				83D452D9281D72B3009FAB30 /* DailyView.swift in Sources */,
 				83857845281FEC7A002281F1 /* Weather2.swift in Sources */,
-				8307F1A52817BEAD00D3937F /* LaunchScreen.swift in Sources */,
 				8385785828228CBC002281F1 /* LocationService.swift in Sources */,
 				8323AA1D2823CD740096EC93 /* PurchaseListViewModel.swift in Sources */,
-				8385784D281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */,
 				83D452C9281D7087009FAB30 /* ListViewModel.swift in Sources */,
 				8307F1AA2819230F00D3937F /* HomePage.swift in Sources */,
 				8307F1AC2819358200D3937F /* AppData.swift in Sources */,
-				832CCF2E2823FCD3003425AD /* PracticeView.swift in Sources */,
 				8307F1AE281A6A2E00D3937F /* HomePageNavigationBarView.swift in Sources */,
 				8323AA212823CD840096EC93 /* PurchaseListView.swift in Sources */,
 				83D452D5281D725D009FAB30 /* Extensions.swift in Sources */,
@@ -543,7 +529,6 @@
 				83D452D6281D725E009FAB30 /* Extensions.swift in Sources */,
 				83D452CE281D70E3009FAB30 /* ListView.swift in Sources */,
 				83D452CA281D7087009FAB30 /* ListViewModel.swift in Sources */,
-				8385784E281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */,
 				8323AA1E2823CD740096EC93 /* PurchaseListViewModel.swift in Sources */,
 				838578652822A5F8002281F1 /* BuckilPage.swift in Sources */,
 				8323AA2A2823D3740096EC93 /* PurchaseView.swift in Sources */,
@@ -565,7 +550,6 @@
 				8385785A28228CBC002281F1 /* LocationService.swift in Sources */,
 				838578662822A5F8002281F1 /* BuckilPage.swift in Sources */,
 				8323AA232823CD840096EC93 /* PurchaseListView.swift in Sources */,
-				8385784F281FEE4B002281F1 /* WeatherAPIApp.swift in Sources */,
 				8385784B281FEDDE002281F1 /* Network.swift in Sources */,
 				8323AA1F2823CD740096EC93 /* PurchaseListViewModel.swift in Sources */,
 				8307F1982817BDDA00D3937F /* DailyBuckilUITestsLaunchTests.swift in Sources */,
